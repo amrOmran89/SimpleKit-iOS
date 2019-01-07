@@ -12,11 +12,15 @@
     "amr.omraan@icloud.com": "amr.omraan@icloud.com"
   },
   "source": {
-    "git": "https://github.com/amr.omraan@icloud.com/SimpleKit.git",
+    "git": "https://github.com/amrOmran89/SimpleKit-iOS.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "SimpleKit/Classes/**/*"
+  "source_files": "SimpleKit/Classes/*",
+  "resources": "SimpleKit/Assets/*",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.2"
+  }
 }

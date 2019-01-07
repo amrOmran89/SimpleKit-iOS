@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - SimpleKit (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - SimpleKit (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SimpleKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SimpleKit: 0834695b145eabf8426117fbf5c9c8741db2f5dd
+  SimpleKit: 9a80f3fc04d2c132990ce184af2256674d197263
 
-PODFILE CHECKSUM: 05457ca011963e29c772fee11aaa461f16cc0888
+PODFILE CHECKSUM: ed151f796056546fc30c7174ed9c4d7075b26752
 
 COCOAPODS: 1.6.0.beta.2
