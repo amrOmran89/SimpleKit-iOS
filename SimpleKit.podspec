@@ -25,12 +25,15 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'amr.omraan@icloud.com' => 'amr.omraan@icloud.com' }
-  s.source           = { :git => 'https://github.com/amr.omraan@icloud.com/SimpleKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/amrOmran89/SimpleKit-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'SimpleKit/Classes/**/*'
+  s.source_files = 'SimpleKit/Classes/*'
+  s.resources = 'SimpleKit/Assets/*'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+
   
   # s.resource_bundles = {
   #   'SimpleKit' => ['SimpleKit/Assets/*.png']
