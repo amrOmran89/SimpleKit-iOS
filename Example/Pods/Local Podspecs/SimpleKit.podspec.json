@@ -1,0 +1,22 @@
+{
+  "name": "SimpleKit",
+  "version": "0.1.0",
+  "summary": "A short description of SimpleKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amr.omraan@icloud.com/SimpleKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amr.omraan@icloud.com": "amr.omraan@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/amr.omraan@icloud.com/SimpleKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SimpleKit/Classes/**/*"
+}
