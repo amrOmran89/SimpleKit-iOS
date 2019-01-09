@@ -20,7 +20,7 @@ public extension SKActivityIndicatorProtocol where Self : UIViewController {
      */
     func setLoadingIndicator(_ set: Bool) {
         
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.center = self.view.center
         activityIndicator.isHidden = true
         

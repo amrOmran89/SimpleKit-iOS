@@ -23,7 +23,7 @@ public class SKLocalPushNotification {
         content.title = skNotificationModel.title
         content.subtitle = skNotificationModel.subTitle
         content.body = skNotificationModel.body
-        content.sound = UNNotificationSound.default()
+        content.sound = UNNotificationSound.default
         
 //        UNTimeIntervalNotificationTrigger
 //        UNCalendarNotificationTrigger
