@@ -10,7 +10,7 @@ import CoreML
 import Vision
 
 public class SKImageClassifier {
-    
+   /*
     func classifyThisImage(image: UIImage, callback: @escaping (Result?, Error?) -> Void) {
         // 1) create model instance from the trained model
         guard let model = try? VNCoreMLModel(for: MobileNet().model) else { return }
@@ -81,5 +81,5 @@ extension CGImagePropertyOrientation {
             self = .rightMirrored
         }
     }
-    
+    */
 }
