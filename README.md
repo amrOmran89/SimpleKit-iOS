@@ -17,12 +17,12 @@ SimpleKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SimpleKit'
+pod 'SimpleKit', :git => 'https://github.com/amrOmran89/SimpleKit-iOS.git'
 ```
 
 ## Author
 
-amr.omraan@icloud.com, amr.omraan@icloud.com
+Amr Omran
 
 ## License
 
