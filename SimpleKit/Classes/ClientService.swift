@@ -23,17 +23,27 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
         public var queryItems: Queries?
         public var parameter: Parameters?
         
-        public init(baseURL: String, path: String,
+        public init(baseURL: String,
+                    path: String,
                     httpMethod: SKHttpMethod,
-                    queryItems: Queries? = nil,
-                    headers: Dictionary<String, String>? = nil,
-                    parameter: Parameters? = nil) {
+                    queryItems: Queries? = nil) {
             
             self.baseURL = baseURL
             self.path = path
             self.httpMethod = httpMethod
-            self.httpHeaders = headers
             self.queryItems = queryItems
+        }
+        
+        public init(baseURL: String,
+             path: String,
+             httpMethod: SKHttpMethod,
+             headers: Dictionary<String, String>? = nil,
+             parameter: Parameters? = nil) {
+           
+            self.baseURL = baseURL
+            self.path = path
+            self.httpMethod = httpMethod
+            self.httpHeaders = headers
             self.parameter = parameter
         }
         

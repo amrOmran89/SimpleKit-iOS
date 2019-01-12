@@ -8,8 +8,12 @@
 
 import Foundation
 
+/// Queries = Array<URLQueryItem>
 public typealias Queries = Array<URLQueryItem>
+
+/// Parameters = Dictionary<String, Any>
 public typealias Parameters = Dictionary<String, Any>
+
 
 public protocol SKEndPointType {
     

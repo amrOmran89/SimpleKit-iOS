@@ -8,8 +8,19 @@
 
 import Foundation
 
-public enum SKHttpHeaders {
+/**
+ A Multipurpose Internet Mail Extensions (MIME) type is a standard that indicates the nature and format of a document, file, or assortment of bytes.
+ */
+public enum MIME {
     
-    static let content_type = "Content-Type"
-    static let application_json = "application/json"
+    public static let content_type = "Content-Type"
+    public static let application_json = "application/json"
+    public static let text_plais =  "text/plain"
+    public static let text_html = "text/html"
+    public static let image_jpeg = "image/jpeg"
+    public static let image_png = "image/png"
+    public static let audio_mpeg = "audio/mpeg"
+    public static let audio = "audio"
+    public static let video_mp4 = "video/mp4"
+
 }

@@ -61,12 +61,13 @@ public extension SKRequestURL where Self: ClientService.HTTPRequest {
         
         var req: URLRequest = URLRequest(url: componentsUrl)
         req.httpMethod = self.httpMethod.rawValue
-        req.addValue(SKHttpHeaders.application_json, forHTTPHeaderField: SKHttpHeaders.content_type)
+        req.addValue(MIME.application_json, forHTTPHeaderField: MIME.content_type)
         req.allHTTPHeaderFields = self.httpHeaders
         
         do {
-            guard let para = self.parameter else { fatalError(Constants.parameterError) }
-            req.httpBody = try JSONSerialization.data(withJSONObject: para, options: [])
+            if let para = self.parameter {
+                req.httpBody = try JSONSerialization.data(withJSONObject: para, options: [])
+            }
         } catch let error {
             print(error)
         }
