@@ -21,17 +21,15 @@ public extension SKReachability {
      */
     func startReachabilityCheckNotifier(reachability: Reachability) {
         
-        let internetCheck = InternetChecker()
-        
         reachability.whenReachable = { reachability in
            
             switch reachability.connection {
                 case .wifi:
                     print("Reachable via WiFi")
-                    internetCheck.setInternetAvailable(isAvailable: true)
+                    InternetChecker.setInternetAvailable = true
                 case .cellular:
                     print("Reachable via Cellular")
-                    internetCheck.setInternetAvailable(isAvailable: true)
+                    InternetChecker.setInternetAvailable = true
                 case .none:
                     print("no internet")
             }
@@ -39,7 +37,7 @@ public extension SKReachability {
         
         reachability.whenUnreachable = { _ in
             print("not reachable")
-            internetCheck.setInternetAvailable(isAvailable: false)
+            InternetChecker.setInternetAvailable = false
         }
         
         do {
@@ -55,7 +53,7 @@ public extension SKReachability {
      */
     func stopReachabilityCheckNotifier(reachability: Reachability) {
         reachability.stopNotifier()
-        InternetChecker().setInternetAvailable(isAvailable: false)
+        InternetChecker.setInternetAvailable = false
     }
     
 }
@@ -65,8 +63,13 @@ public class InternetChecker {
     /// get the internet connectivity status
     public static private(set) var isInternetAvailable: Bool = false
     
-    fileprivate func setInternetAvailable(isAvailable: Bool) {
-        InternetChecker.isInternetAvailable = isAvailable
+    fileprivate static var setInternetAvailable: Bool {
+        get {
+            return isInternetAvailable
+        }
+        set {
+            return isInternetAvailable = newValue
+        }
     }
 }
 

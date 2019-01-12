@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S7AHFT447W;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S7AHFT447W;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -485,6 +487,7 @@
 			baseConfigurationReference = AC3759E9F586C1C29A0500DA /* Pods-SimpleKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7AHFT447W;
 				INFOPLIST_FILE = SimpleKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -501,6 +504,7 @@
 			baseConfigurationReference = 2057AA652329A9BD9F6B07D7 /* Pods-SimpleKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7AHFT447W;
 				INFOPLIST_FILE = SimpleKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -516,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A4FFF3D0BCBC460B9634872 /* Pods-SimpleKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S7AHFT447W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -538,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B311AD055626CE2D377B685 /* Pods-SimpleKit_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S7AHFT447W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
