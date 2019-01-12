@@ -21,35 +21,31 @@ public protocol SKRequestURL {
 
 public extension SKRequestURL where Self: ClientService.HTTPRequest {
     
-    var urlComponents: URLComponents {
-        get {
-            guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
-            var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-            components?.path = self.path
-            return components!
-        }
-        set {}
-    }
-    
     
     /// build GET Request
     var request: URLRequest {
+        
         var req: URLRequest!
         
+        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        
+        components?.path = self.path
+        
         if let queries = self.queryItems {
-            var urlComponet = urlComponents
-            urlComponet?.queryItems = queries
+           
+            components?.queryItems = queries
+            let componentsUrl = components?.url
+           
+            print("URL: \(componentsUrl!)")
             
-            guard let url = urlComponents?.url else { fatalError(Constants.wrongUrlComponents) }
-            print("URL: \(url)")
-            
-            req = URLRequest(url: url)
-            req.httpMethod = httpMethod.rawValue
+            req = URLRequest(url: componentsUrl!)
             return req
         }
-        guard let url = urlComponents?.url else { fatalError(Constants.wrongUrlComponents) }
-        print("URL: \(url)")
-        req = URLRequest(url: url)
+        
+        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl) }
+
+        req = URLRequest(url: componentsUrl)
         return req
     }
     
@@ -57,12 +53,13 @@ public extension SKRequestURL where Self: ClientService.HTTPRequest {
     
     /// build any request with parameter and headers (Delete, Put, Post, Patch)
     var requestWithParameterAndHeader: URLRequest {
-        urlComponents?.queryItems = self.queryItems
         
-        guard let url = urlComponents?.url else { fatalError(Constants.wrongUrlComponents) }
-        print("URL: \(url)")
+        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        components?.path = self.path
+        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl) }
         
-        var req: URLRequest = URLRequest(url: url)
+        var req: URLRequest = URLRequest(url: componentsUrl)
         req.httpMethod = self.httpMethod.rawValue
         req.addValue(SKHttpHeaders.application_json, forHTTPHeaderField: SKHttpHeaders.content_type)
         req.allHTTPHeaderFields = self.httpHeaders

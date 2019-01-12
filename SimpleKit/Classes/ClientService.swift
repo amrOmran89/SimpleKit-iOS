@@ -37,27 +37,18 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
             self.parameter = parameter
         }
         
-        var urlComponents: URLComponents? {
-            get {
-                guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
-                var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-                components?.path = self.path
-                return components!
-            }
-            set {}
-        }
+
         
-        
-        public func build<T: Decodable>(_ callback: @escaping (T?, Error?) -> Void) {
+        public func build<T: Decodable>(callback: @escaping (T) -> Void) {
             
             let session = URLSession.shared
             var urlRequest: URLRequest!
             
             switch self.httpMethod {
-            case .get:
-                urlRequest = self.request
-            default:
-                urlRequest = self.requestWithParameterAndHeader
+                case .get:
+                    urlRequest = self.request
+                default:
+                    urlRequest = self.requestWithParameterAndHeader
             }
             
             guard let httpRequest = urlRequest else { fatalError(Constants.requestError) }
@@ -65,7 +56,7 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
             let task = session.dataTask(with: httpRequest) { (data, respone, error) in
                 if let err = error {
                     print(err)
-                    callback(nil, error)
+//                    callback(nil)
                 }
                 else {
                     let responseStatus = respone as! HTTPURLResponse
@@ -75,12 +66,12 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
                         if let data = data {
                             let jsonData = try JSONDecoder().decode(T.self, from: data)
                             
-                            callback(jsonData, nil)
+                            callback(jsonData)
                         }
                     }
                     catch let error {
                         print(error.localizedDescription)
-                        callback(nil, error)
+//                        callback(nil)
                     }
                 }
             }
