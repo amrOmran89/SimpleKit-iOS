@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class ClientService: FileSystemProtocol {
+public class ClientService: FileSystemProtocol, URLDownloadProtocol {
     
     public init() {}
     
@@ -48,7 +48,7 @@ public class ClientService: FileSystemProtocol {
         }
         
         
-        public func buildRequestForJson<T: Decodable>(_ callback: @escaping (T?, Error?) -> Void) {
+        public func build<T: Decodable>(_ callback: @escaping (T?, Error?) -> Void) {
             
             let session = URLSession.shared
             var urlRequest: URLRequest!

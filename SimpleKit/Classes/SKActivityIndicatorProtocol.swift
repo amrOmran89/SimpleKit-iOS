@@ -9,7 +9,7 @@ import UIKit
 
 public protocol SKActivityIndicatorProtocol {
     
-    func setLoadingIndicator(_ set: Bool)
+    func setLoadingIndicator(activityIndicator: UIActivityIndicatorView, activate: Bool)
 }
 
 public extension SKActivityIndicatorProtocol where Self : UIViewController {
@@ -18,24 +18,19 @@ public extension SKActivityIndicatorProtocol where Self : UIViewController {
      setLoadingIndicator create UIActivityIndicatorView.
      - Parameter set: Bool.
      */
-    func setLoadingIndicator(_ set: Bool) {
+    func setLoadingIndicator(activityIndicator: UIActivityIndicatorView, activate: Bool) {
         
-        let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.center = self.view.center
         activityIndicator.isHidden = true
         
-        if set {
+        if activate {
             activityIndicator.startAnimating()
             activityIndicator.isHidden = false
             self.view.addSubview(activityIndicator)
 
         } else {
             activityIndicator.isHidden = true
-            DispatchQueue.main.async {
-              activityIndicator.stopAnimating()
-            }
-            
-            activityIndicator.removeFromSuperview()
+            activityIndicator.stopAnimating()
         }
     }
 

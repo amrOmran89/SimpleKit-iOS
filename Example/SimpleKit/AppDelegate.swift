@@ -10,7 +10,7 @@ import UIKit
 import SimpleKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, SKReachability {
+class AppDelegate: UIResponder, UIApplicationDelegate, SKReachabilityProtocol {
 
     var window: UIWindow?
 

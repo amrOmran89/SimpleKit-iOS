@@ -7,13 +7,13 @@
 
 import Foundation
 
-public protocol SKReachability {
+public protocol SKReachabilityProtocol {
     
     func startReachabilityCheckNotifier(reachability: Reachability)
     func stopReachabilityCheckNotifier(reachability: Reachability)
 }
 
-public extension SKReachability {
+public extension SKReachabilityProtocol {
     
     /**
      Call this method in didFinishLaunchingWithOptions to start the Notification Center.

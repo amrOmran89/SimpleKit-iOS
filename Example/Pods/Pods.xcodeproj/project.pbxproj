@@ -31,10 +31,11 @@
 		918B22AF525505B05FE16E09B293BCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		96977E38D148624F63D553FB1F36F65C /* SKScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D736A4F4FC5D53DF8EAF72596D2CE /* SKScanner.swift */; };
 		984ED0F2ED0D646E525387AED0D1A50A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C334021139159C9FDFE1E21AE228D8A /* EndPointType.swift */; };
-		9A68D76A7B5898F4694CEE81D6F32312 /* SKReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachability.swift */; };
+		9A68D76A7B5898F4694CEE81D6F32312 /* SKReachabilityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */; };
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2B38EB50CEACA4E57FCDEB1579571C5 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */; };
 		B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7CBF4F51D1AD70ADEE5CA25CCBDA2 /* MobileNet.mlmodel */; };
+		C59D73BC21EA7D0800DBC381 /* URLDownloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */; };
 		C8667A41009E5269E27210C7852C7771 /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160008D814DB265AE751E88A12EA5BB6 /* HttpHeaders.swift */; };
 		D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */; };
 		EC5EC04A94AB65989EAAD9DF9AEAF154 /* SKImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619CFC7F60244B17C945FD60728F6F2 /* SKImagePicker.swift */; };
@@ -105,6 +106,7 @@
 		C0070F33B7F7A9774D461E1DE048211E /* RequestURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
 		C39F6AEAA8A22ED3C0CF82590E3D3BFF /* SimpleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-umbrella.h"; sourceTree = "<group>"; };
 		C5183FF7922767FFC0871F5D09878A25 /* Pods-SimpleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLDownloadProtocol.swift; path = SimpleKit/Classes/URLDownloadProtocol.swift; sourceTree = "<group>"; };
 		C659C287DC99048FCA9D943F2A5E34C7 /* SKImageClassifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKImageClassifier.swift; path = SimpleKit/Classes/SKImageClassifier.swift; sourceTree = "<group>"; };
 		C6923B852D0A26F2AF927B8D45A9BE5E /* Pods_SimpleKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKView.swift; path = SimpleKit/Classes/SKView.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F8A9A2E11B6F3581D07E8E99F7B7D649 /* Pods-SimpleKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Example-Info.plist"; sourceTree = "<group>"; };
 		F9B67CB40446C107F15453F11501EB17 /* Pods-SimpleKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKReachability.swift; path = SimpleKit/Classes/SKReachability.swift; sourceTree = "<group>"; };
+		FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKReachabilityProtocol.swift; path = SimpleKit/Classes/SKReachabilityProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,11 +195,12 @@
 				4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */,
 				BA038E7E2A308E2943DC97BE686ED918 /* SKNotificationModel.swift */,
 				146D08662B8B6B528F65C78C665F4EC1 /* SKPopUpViewController.swift */,
-				FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachability.swift */,
+				FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */,
 				D18D736A4F4FC5D53DF8EAF72596D2CE /* SKScanner.swift */,
 				62DFC5BBC36A1B9BB361CAEBC3F07F51 /* SKTextToSpeech.swift */,
 				CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */,
 				2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */,
+				C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */,
 				6AFC3DC5A6282E0ED1F5FD528C2B8AD8 /* UrlComponent.swift */,
 				780791642E8FFC1BFED2837C285FDBBE /* Pod */,
 				6F4D62C523633050B96C34A564EA27DA /* Resources */,
@@ -485,7 +488,8 @@
 				D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */,
 				1706597EAEE53F858A39251A9DD29AE2 /* SKNotificationModel.swift in Sources */,
 				7A660426BD047B20C391378B655E4FBF /* SKPopUpViewController.swift in Sources */,
-				9A68D76A7B5898F4694CEE81D6F32312 /* SKReachability.swift in Sources */,
+				C59D73BC21EA7D0800DBC381 /* URLDownloadProtocol.swift in Sources */,
+				9A68D76A7B5898F4694CEE81D6F32312 /* SKReachabilityProtocol.swift in Sources */,
 				96977E38D148624F63D553FB1F36F65C /* SKScanner.swift in Sources */,
 				52AB77F187E5010F130ACFB59B060CF2 /* SKTextToSpeech.swift in Sources */,
 				738FFE25FB6931616E159D375CE6A3F3 /* SKView.swift in Sources */,

@@ -9,18 +9,22 @@
 import UIKit
 import SimpleKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SKActivityIndicatorProtocol {
 
+    let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        setLoadingIndicator(activityIndicator: indicator, activate: true)
         
     }
 
 
     @IBAction func button(_ sender: Any) {
         print(InternetChecker.isInternetAvailable)
+        setLoadingIndicator(activityIndicator: indicator, activate: false)
     }
     
 }

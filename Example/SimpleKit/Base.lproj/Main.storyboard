@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJJ-sz-kWa">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <rect key="frame" x="164" y="374" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="button:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LBW-RI-4Jt"/>
@@ -32,7 +32,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zJJ-sz-kWa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="QcZ-K0-eu8"/>
-                            <constraint firstItem="zJJ-sz-kWa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="YRl-hr-cDB"/>
+                            <constraint firstItem="zJJ-sz-kWa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="55.5" id="YRl-hr-cDB"/>
                         </constraints>
                     </view>
                 </viewController>
