@@ -5,7 +5,7 @@
 //  Created by Amr Omran on 01/12/2019.
 //
 
-import Foundation
+import UIKit
 
 public protocol URLDownloadProtocol {
     

@@ -11,7 +11,7 @@ import SimpleKit
 
 class ViewController: UIViewController, SKActivityIndicatorProtocol {
 
-    let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    let indicator = UIActivityIndicatorView(style: .gray)
     
     override func viewDidLoad() {
         super.viewDidLoad()
