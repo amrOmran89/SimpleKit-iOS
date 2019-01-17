@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SimpleKit:
-    :commit: efb31ec34d1a686bd0d03fac75a101318f45d330
+    :commit: 8f3ff8f6f979725ae1833d87aa2cf9c654364066
     :git: https://github.com/amrOmran89/SimpleKit-iOS.git
 
 SPEC CHECKSUMS:
