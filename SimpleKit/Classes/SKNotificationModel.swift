@@ -26,16 +26,18 @@ public struct SKNotificationModel {
     let dismissActionTitle: String
 
 
-    public init(title: String,
-                subTitle: String,
-                body: String,
-                attachmentIdentifier: String,
-                attachmentUrl: URL?,
-                notificationIdentifier: String,
-                timeInterval: Double,
-                repeats: Bool,
-                categoryIdentifiers: String,
-                dismissActionTitle: String) {
+    public init(
+        title: String,
+        subTitle: String,
+        body: String,
+        attachmentIdentifier: String,
+        attachmentUrl: URL?,
+        notificationIdentifier: String,
+        timeInterval: Double,
+        repeats: Bool,
+        categoryIdentifiers: String,
+        dismissActionTitle: String
+    ) {
 
         self.title = title
         self.subTitle = subTitle

@@ -38,8 +38,6 @@
 		C59D73BC21EA7D0800DBC381 /* URLDownloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */; };
 		C8667A41009E5269E27210C7852C7771 /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160008D814DB265AE751E88A12EA5BB6 /* HttpHeaders.swift */; };
 		D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */; };
-		EC5EC04A94AB65989EAAD9DF9AEAF154 /* SKImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619CFC7F60244B17C945FD60728F6F2 /* SKImagePicker.swift */; };
-		F06DE3A5E5002EEA4FD2660CF6122E33 /* UrlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC3DC5A6282E0ED1F5FD528C2B8AD8 /* UrlComponent.swift */; };
 		F1141CD8F732115E46F5B8BE8B18E919 /* SKiPhoneSceenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD418D352D68AAED8817D0039FEDB /* SKiPhoneSceenType.swift */; };
 		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C39F6AEAA8A22ED3C0CF82590E3D3BFF /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -73,7 +71,6 @@
 		26F3B6009FF8A925310C675EFE4EF4E4 /* Pods-SimpleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtenstion.swift; path = SimpleKit/Classes/UIViewExtenstion.swift; sourceTree = "<group>"; };
 		2C334021139159C9FDFE1E21AE228D8A /* EndPointType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = SimpleKit/Classes/EndPointType.swift; sourceTree = "<group>"; };
-		3619CFC7F60244B17C945FD60728F6F2 /* SKImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKImagePicker.swift; path = SimpleKit/Classes/SKImagePicker.swift; sourceTree = "<group>"; };
 		390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3A5348DC51B6F500D9FB368C61BCB950 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKNavigationProtocol.swift; path = SimpleKit/Classes/SKNavigationProtocol.swift; sourceTree = "<group>"; };
@@ -89,7 +86,6 @@
 		6032BE2E7926EFA226997133DB1584EB /* SimpleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKit.xcconfig; sourceTree = "<group>"; };
 		625533FA4A3A4E6C7B5302C6E0186929 /* Pods-SimpleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		62DFC5BBC36A1B9BB361CAEBC3F07F51 /* SKTextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKTextToSpeech.swift; path = SimpleKit/Classes/SKTextToSpeech.swift; sourceTree = "<group>"; };
-		6AFC3DC5A6282E0ED1F5FD528C2B8AD8 /* UrlComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UrlComponent.swift; path = SimpleKit/Classes/UrlComponent.swift; sourceTree = "<group>"; };
 		6F6375AC5001F9B5BFDA5AD4B553EE7C /* FileSystemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
 		74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Example-dummy.m"; sourceTree = "<group>"; };
 		7FDA5D52F9A9F024061231039BB32DE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -189,7 +185,6 @@
 				D11A79785040F596BDEDD58530393300 /* SKAlertController.swift */,
 				4498C53905898E85F4C05055FBE88F7F /* SKError.swift */,
 				C659C287DC99048FCA9D943F2A5E34C7 /* SKImageClassifier.swift */,
-				3619CFC7F60244B17C945FD60728F6F2 /* SKImagePicker.swift */,
 				848FD418D352D68AAED8817D0039FEDB /* SKiPhoneSceenType.swift */,
 				5A86BCC66112ECD038448D363A80F357 /* SKLocalPushNotification.swift */,
 				4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */,
@@ -201,7 +196,6 @@
 				CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */,
 				2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */,
 				C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */,
-				6AFC3DC5A6282E0ED1F5FD528C2B8AD8 /* UrlComponent.swift */,
 				780791642E8FFC1BFED2837C285FDBBE /* Pod */,
 				6F4D62C523633050B96C34A564EA27DA /* Resources */,
 				7D3FA192FC2088461E31E77A55A8B641 /* Support Files */,
@@ -482,7 +476,6 @@
 				22017BF8CEF99EAAE1A5DF5E0320594A /* SKAlertController.swift in Sources */,
 				85BCB0B4AE23659F61636916C0CD43FF /* SKError.swift in Sources */,
 				1393648A718E9E23A424828CAD991645 /* SKImageClassifier.swift in Sources */,
-				EC5EC04A94AB65989EAAD9DF9AEAF154 /* SKImagePicker.swift in Sources */,
 				F1141CD8F732115E46F5B8BE8B18E919 /* SKiPhoneSceenType.swift in Sources */,
 				0819307E4A380EAF52CFCACDD2894670 /* SKLocalPushNotification.swift in Sources */,
 				D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */,
@@ -494,7 +487,6 @@
 				52AB77F187E5010F130ACFB59B060CF2 /* SKTextToSpeech.swift in Sources */,
 				738FFE25FB6931616E159D375CE6A3F3 /* SKView.swift in Sources */,
 				A2B38EB50CEACA4E57FCDEB1579571C5 /* UIViewExtenstion.swift in Sources */,
-				F06DE3A5E5002EEA4FD2660CF6122E33 /* UrlComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

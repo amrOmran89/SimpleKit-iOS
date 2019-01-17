@@ -31,33 +31,43 @@ public class SKLocalPushNotification {
         
 
         if let url = skNotificationModel.attachmentUrl {
-            if let attachments = try? UNNotificationAttachment(identifier: skNotificationModel.attachmentIdentifier,
-                                                               url: url,
-                                                               options: nil) {
-                content.attachments = [attachments]
+            
+            if let attachments = try? UNNotificationAttachment(
+                identifier: skNotificationModel.attachmentIdentifier,
+                url: url,
+                options: nil) {
+                    content.attachments = [attachments]
+                }
             }
-        }
         
         
         // notification trigger
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: skNotificationModel.timeInterval,
-                                                        repeats: skNotificationModel.repeats)
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: skNotificationModel.timeInterval,
+            repeats: skNotificationModel.repeats
+        )
         
         // request to display
-        let request = UNNotificationRequest(identifier: skNotificationModel.notificationIdentifier,
-                                            content: content,
-                                            trigger: trigger)
+        let request = UNNotificationRequest(
+            identifier: skNotificationModel.notificationIdentifier,
+            content: content,
+            trigger: trigger
+        )
         
         // notification action
-        let dismiss = UNNotificationAction(identifier: skNotificationModel.dismissActionTitle,
-                                           title: skNotificationModel.dismissActionTitle,
-                                           options: .destructive)
+        let dismiss = UNNotificationAction(
+            identifier: skNotificationModel.dismissActionTitle,
+            title: skNotificationModel.dismissActionTitle,
+            options: .destructive
+        )
         
         // notification category for actions
-        let generalCategory = UNNotificationCategory(identifier: skNotificationModel.categoryIdentifiers,
-                                                     actions: [dismiss],
-                                                     intentIdentifiers: [],
-                                                     options: [.customDismissAction])
+        let generalCategory = UNNotificationCategory(
+            identifier: skNotificationModel.categoryIdentifiers,
+            actions: [dismiss],
+            intentIdentifiers: [],
+            options: [.customDismissAction]
+        )
         
         center.setNotificationCategories([generalCategory])
         

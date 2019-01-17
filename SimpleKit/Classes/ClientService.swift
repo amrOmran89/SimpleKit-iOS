@@ -13,7 +13,6 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
     
     public init() {}
     
-    
     public class HTTPRequest: SKEndPointType, SKRequestURL {
         
         public var baseURL: String
@@ -34,6 +33,7 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
             self.queryItems = queryItems
         }
         
+        /// You can always use MIME class that provides static headers
         public init(baseURL: String,
              path: String,
              httpMethod: SKHttpMethod,
@@ -61,7 +61,7 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
                     urlRequest = self.requestWithParameterAndHeader
             }
             
-            guard let httpRequest = urlRequest else { fatalError(Constants.requestError) }
+            guard let httpRequest = urlRequest else { return }
             
             let task = session.dataTask(with: httpRequest) { (data, respone, error) in
                 if let err = error {

@@ -15,7 +15,10 @@ public protocol FileSystemProtocol {
 public extension FileSystemProtocol {
     func fileLocalUrl(fileName: String) -> URL {
         let file = FileManager.default
-        let documents: URL = file.urls(for: .documentDirectory, in: .userDomainMask).first!
+        guard let documents: URL = file.urls(for: .documentDirectory, in: .userDomainMask).first
+            else {
+                fatalError("Should not fail \(#line) \(#file)")
+            }
         let destinationUrl = documents.appendingPathComponent(fileName)
         return destinationUrl
     }
