@@ -27,9 +27,9 @@ public extension SKRequestURL where Self: ClientService.HTTPRequest {
         
         var req: URLRequest!
         
-        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
+        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        
+
         components?.path = self.path
         
         if let queries = self.queryItems {
@@ -43,7 +43,7 @@ public extension SKRequestURL where Self: ClientService.HTTPRequest {
             return req
         }
         
-        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl) }
+        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
 
         req = URLRequest(url: componentsUrl)
         return req
@@ -54,14 +54,13 @@ public extension SKRequestURL where Self: ClientService.HTTPRequest {
     /// build any request with parameter and headers (Delete, Put, Post, Patch)
     var requestWithParameterAndHeader: URLRequest {
         
-        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl) }
+        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
         components?.path = self.path
-        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl) }
+        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrlComponents + "\(#line) \(#file)") }
         
         var req: URLRequest = URLRequest(url: componentsUrl)
         req.httpMethod = self.httpMethod.rawValue
-        req.addValue(MIME.application_json, forHTTPHeaderField: MIME.content_type)
         req.allHTTPHeaderFields = self.httpHeaders
         
         do {

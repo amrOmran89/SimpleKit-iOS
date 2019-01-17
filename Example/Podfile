@@ -2,7 +2,7 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'SimpleKit_Example' do
-  pod 'SimpleKit', :path => '../'
+  pod 'SimpleKit', :git => 'https://github.com/amrOmran89/SimpleKit-iOS.git'
 
   target 'SimpleKit_Tests' do
     inherit! :search_paths

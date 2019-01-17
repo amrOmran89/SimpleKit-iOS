@@ -17,8 +17,7 @@ public class SKScanner {
     
     public init() {}
 
-    
-    
+
     public func startLiveVideo(streamView: UIImageView) {
       
         session.sessionPreset = AVCaptureSession.Preset.photo
@@ -28,8 +27,6 @@ public class SKScanner {
 //        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: Int(kCVPixelFormatType_32BGRA)]
 
 //        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue.global(qos: DispatchQoS.QoSClass.default))
-
-        
         if session.canAddInput(videoInput) {
             session.addInput(videoInput)
         }
@@ -40,7 +37,6 @@ public class SKScanner {
         
         if session.canAddOutput(metadataOutput) {
             session.addOutput(metadataOutput)
-            
 //            metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             metadataOutput.metadataObjectTypes = [.qr]
             

@@ -9,7 +9,9 @@
 import Foundation
 
 /**
- A Multipurpose Internet Mail Extensions (MIME) type is a standard that indicates the nature and format of a document, file, or assortment of bytes.
+ * Multipurpose Internet Mail Extensions (MIME) type is a standard
+ * that indicates the nature and format of a document,
+ * file, or assortment of bytes.
  */
 public enum MIME {
     

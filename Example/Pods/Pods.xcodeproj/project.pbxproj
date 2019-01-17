@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B4A336FBAF8CFD1CE13D45642EA07F /* SKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9E0343FABFB2CD78A9A7C56CA0C97 /* SKError.swift */; };
+		02A1DCA2E7E96571BE397345ADE6ACEC /* SKNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87226E70B5FA5C9EB4B9A2890563EBA5 /* SKNavigationProtocol.swift */; };
 		037CA0C3BBB449C3413252522B88AD3E /* Pods-SimpleKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0277B319201B30656ADD9F8B9552C8A /* Pods-SimpleKit_Tests-dummy.m */; };
-		0819307E4A380EAF52CFCACDD2894670 /* SKLocalPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86BCC66112ECD038448D363A80F357 /* SKLocalPushNotification.swift */; };
-		08451E4E2196165D0AA3432B1EC2C5B9 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD0F06EF424771FD609A738D3ED4C6 /* HttpMethod.swift */; };
-		090BCCEC1BB6764EC82DE4B7B988A028 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DE85CCFA56621D0FAA1CFA82A0918 /* ClientService.swift */; };
-		1393648A718E9E23A424828CAD991645 /* SKImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C659C287DC99048FCA9D943F2A5E34C7 /* SKImageClassifier.swift */; };
-		16818538D883E1B5CD969DC16185AEB3 /* SKActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817E24B210AB1815D75B46F25448346 /* SKActivityIndicatorProtocol.swift */; };
-		1706597EAEE53F858A39251A9DD29AE2 /* SKNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA038E7E2A308E2943DC97BE686ED918 /* SKNotificationModel.swift */; };
-		22017BF8CEF99EAAE1A5DF5E0320594A /* SKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A79785040F596BDEDD58530393300 /* SKAlertController.swift */; };
+		045D4F5DC02428F820CB6B6DFAA2049D /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CEE331947117DC6C25CFD74052EA7 /* HttpHeaders.swift */; };
+		08962FA9669BA1CF77A8964BE2BCD28C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */; };
+		14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */; };
+		228A2833A752718093169C61774529EF /* SKReachabilityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302067F8CB14B52A1E48F4C9D6247B /* SKReachabilityProtocol.swift */; };
+		234CD28B742FD4A041292339D56639E6 /* SKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68917D138041E9F4F94311A97F39A253 /* SKAlertController.swift */; };
 		37782EF66F9697AF00E60923BF941E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		3796B39ACD2B394DC4EDBF66AB1F8390 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF0E327C0BAA5AFABBC38DA2A35882 /* Reachability.swift */; };
-		52AB77F187E5010F130ACFB59B060CF2 /* SKTextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DFC5BBC36A1B9BB361CAEBC3F07F51 /* SKTextToSpeech.swift */; };
-		546FAD4DC312ADE9230CB864F9AE3B1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C21A8125826FA1E19FFFFFD7CA2A /* Constants.swift */; };
+		3BDBF61C1F150032CA6794A22E143511 /* SKActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5487317CAF3B668B1995DE45741BEA /* SKActivityIndicatorProtocol.swift */; };
+		4C067747A2CDC631B3716979F2A30702 /* SKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD4F06F0DC3B00AF0DB217C117CE38 /* SKView.swift */; };
+		4DBB056CEE5BF637F6F03A9EB181273E /* SKNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624BF3A24309E84B57ABEADEFC04C88 /* SKNotificationModel.swift */; };
+		520FDC0DF42112C984B828CBD777C41F /* RequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */; };
+		5D4921681E38F405291B7829D0564841 /* URLDownloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483F9C0482BB19524668CC8173C5D14 /* URLDownloadProtocol.swift */; };
 		6354E1A90368F11C108F5208E954A077 /* Pods-SimpleKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */; };
-		6446E15F7F5E3AB18560F5374D51BC07 /* RequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070F33B7F7A9774D461E1DE048211E /* RequestURL.swift */; };
-		6877C5A2C6432B98ACE2873985A5687F /* FileSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6375AC5001F9B5BFDA5AD4B553EE7C /* FileSystemProtocol.swift */; };
-		7108FC3EE61131D77573A771D6DDF41D /* SimpleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9979D0EA165CE77EA701770EC0EBB /* SimpleKit-dummy.m */; };
-		738FFE25FB6931616E159D375CE6A3F3 /* SKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */; };
+		66361DC1A7F9A7870A81710DEED90C95 /* SKLocalPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F69464A11414CAD7EF0BCFA2C6623B /* SKLocalPushNotification.swift */; };
+		670175463FBBCADCC7B66CA418C1AD78 /* SKiPhoneSceenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37787D8A58CBFD4F537FEA2CEDDB55 /* SKiPhoneSceenType.swift */; };
+		69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */; };
 		74E593155D6C099C40AD990EF24A1EB3 /* Pods-SimpleKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A660426BD047B20C391378B655E4FBF /* SKPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D08662B8B6B528F65C78C665F4EC1 /* SKPopUpViewController.swift */; };
 		7D5C73262AA70F1ED1E3A11327098FA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		85BCB0B4AE23659F61636916C0CD43FF /* SKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498C53905898E85F4C05055FBE88F7F /* SKError.swift */; };
+		7FF382B7B4FCA21AD12119CB6191DA5A /* SimpleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97C605EC7304E45741CAE72ECD450B /* SimpleKit-dummy.m */; };
 		918B22AF525505B05FE16E09B293BCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		96977E38D148624F63D553FB1F36F65C /* SKScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D736A4F4FC5D53DF8EAF72596D2CE /* SKScanner.swift */; };
-		984ED0F2ED0D646E525387AED0D1A50A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C334021139159C9FDFE1E21AE228D8A /* EndPointType.swift */; };
-		9A68D76A7B5898F4694CEE81D6F32312 /* SKReachabilityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */; };
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2B38EB50CEACA4E57FCDEB1579571C5 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */; };
-		B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7CBF4F51D1AD70ADEE5CA25CCBDA2 /* MobileNet.mlmodel */; };
-		C59D73BC21EA7D0800DBC381 /* URLDownloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */; };
-		C8667A41009E5269E27210C7852C7771 /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160008D814DB265AE751E88A12EA5BB6 /* HttpHeaders.swift */; };
-		D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */; };
-		F1141CD8F732115E46F5B8BE8B18E919 /* SKiPhoneSceenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD418D352D68AAED8817D0039FEDB /* SKiPhoneSceenType.swift */; };
-		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C39F6AEAA8A22ED3C0CF82590E3D3BFF /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE2F1EF8D4A394A002154406C88A14A1 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8047056F77281146EEFEE4B01678AA /* UIViewExtenstion.swift */; };
+		B44DBCFFBA00C887F5EC7ED6C5BFFCED /* SKImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5493E7D5419D2B48BEE38DC7465A8469 /* SKImageClassifier.swift */; };
+		B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */; };
+		BAAE5941AF4CC666C3A8F013C6EC528D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */; };
+		CBDEFC8A4C4091B6C020B2C2C52B1141 /* SKScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33187C21983B37D6670AA55A6EF3728 /* SKScanner.swift */; };
+		CC5B90D4E4AA0CE55D8D13E574DA81AA /* SKPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD617E38326A7E1C02ED1900E1E6DC6 /* SKPopUpViewController.swift */; };
+		E072D15CAE52DF95CE108F11C3ED0046 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */; };
+		FC7D880B3C328A97FD1B02FE05A06E9A /* SKTextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */; };
+		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,61 +60,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022F3A34EF9563F0DC22583B49C0503D /* SimpleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01302067F8CB14B52A1E48F4C9D6247B /* SKReachabilityProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKReachabilityProtocol.swift; path = SimpleKit/Classes/SKReachabilityProtocol.swift; sourceTree = "<group>"; };
+		022F3A34EF9563F0DC22583B49C0503D /* SimpleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKit.framework; path = SimpleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031AA4CF46B6E638CD0A802254A29AB6 /* Pods-SimpleKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0483F9C0482BB19524668CC8173C5D14 /* URLDownloadProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDownloadProtocol.swift; path = SimpleKit/Classes/URLDownloadProtocol.swift; sourceTree = "<group>"; };
+		04D9E0343FABFB2CD78A9A7C56CA0C97 /* SKError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKError.swift; path = SimpleKit/Classes/SKError.swift; sourceTree = "<group>"; };
 		04DF6A6196ADED6FF6FC30D991938605 /* Pods-SimpleKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleKit_Example.modulemap"; sourceTree = "<group>"; };
-		068A3FBE3FCD77B268CB5EA880322EAC /* SimpleKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKit-Info.plist"; sourceTree = "<group>"; };
-		146D08662B8B6B528F65C78C665F4EC1 /* SKPopUpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKPopUpViewController.swift; path = SimpleKit/Classes/SKPopUpViewController.swift; sourceTree = "<group>"; };
-		160008D814DB265AE751E88A12EA5BB6 /* HttpHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpHeaders.swift; path = SimpleKit/Classes/HttpHeaders.swift; sourceTree = "<group>"; };
-		1817E24B210AB1815D75B46F25448346 /* SKActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKActivityIndicatorProtocol.swift; path = SimpleKit/Classes/SKActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
-		1CB7CBF4F51D1AD70ADEE5CA25CCBDA2 /* MobileNet.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = SimpleKit/Assets/MobileNet.mlmodel; sourceTree = "<group>"; };
+		0624BF3A24309E84B57ABEADEFC04C88 /* SKNotificationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKNotificationModel.swift; path = SimpleKit/Classes/SKNotificationModel.swift; sourceTree = "<group>"; };
+		09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = SimpleKit/Classes/HttpMethod.swift; sourceTree = "<group>"; };
+		1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKit.xcconfig; sourceTree = "<group>"; };
+		20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
+		222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; name = MobileNet.mlmodel; path = SimpleKit/Assets/MobileNet.mlmodel; sourceTree = "<group>"; };
 		26F3B6009FF8A925310C675EFE4EF4E4 /* Pods-SimpleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtenstion.swift; path = SimpleKit/Classes/UIViewExtenstion.swift; sourceTree = "<group>"; };
-		2C334021139159C9FDFE1E21AE228D8A /* EndPointType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = SimpleKit/Classes/EndPointType.swift; sourceTree = "<group>"; };
+		2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
 		390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		3A5348DC51B6F500D9FB368C61BCB950 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKNavigationProtocol.swift; path = SimpleKit/Classes/SKNavigationProtocol.swift; sourceTree = "<group>"; };
-		4498C53905898E85F4C05055FBE88F7F /* SKError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKError.swift; path = SimpleKit/Classes/SKError.swift; sourceTree = "<group>"; };
+		3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = SimpleKit/Classes/EndPointType.swift; sourceTree = "<group>"; };
+		3C648E17624D5D3A4A8B5E05924832B2 /* SimpleKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKit-Info.plist"; sourceTree = "<group>"; };
+		3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SimpleKit/Classes/Constants.swift; sourceTree = "<group>"; };
 		45C3F695E46394B403A72AEB64501B08 /* Pods-SimpleKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4CF2526F986DE7B1F195C21A6EC0D350 /* SimpleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-prefix.pch"; sourceTree = "<group>"; };
 		4D50E8EA77BA43863679FC6AB78B9AB9 /* Pods-SimpleKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4DBF0E327C0BAA5AFABBC38DA2A35882 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = SimpleKit/Classes/Reachability.swift; sourceTree = "<group>"; };
 		4EBF540BDC1FD2B2435FE6DD5EACB3C0 /* Pods-SimpleKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF195FFF90CAF7A329E71068B78960A /* Pods-SimpleKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleKit_Tests.modulemap"; sourceTree = "<group>"; };
-		54699D6302F37C2A7F01836A54D151F3 /* Pods_SimpleKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A86BCC66112ECD038448D363A80F357 /* SKLocalPushNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKLocalPushNotification.swift; path = SimpleKit/Classes/SKLocalPushNotification.swift; sourceTree = "<group>"; };
-		6032BE2E7926EFA226997133DB1584EB /* SimpleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKit.xcconfig; sourceTree = "<group>"; };
+		50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = SimpleKit/Classes/Reachability.swift; sourceTree = "<group>"; };
+		54699D6302F37C2A7F01836A54D151F3 /* Pods_SimpleKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleKit_Tests.framework; path = "Pods-SimpleKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5493E7D5419D2B48BEE38DC7465A8469 /* SKImageClassifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKImageClassifier.swift; path = SimpleKit/Classes/SKImageClassifier.swift; sourceTree = "<group>"; };
+		6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-umbrella.h"; sourceTree = "<group>"; };
 		625533FA4A3A4E6C7B5302C6E0186929 /* Pods-SimpleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		62DFC5BBC36A1B9BB361CAEBC3F07F51 /* SKTextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKTextToSpeech.swift; path = SimpleKit/Classes/SKTextToSpeech.swift; sourceTree = "<group>"; };
-		6F6375AC5001F9B5BFDA5AD4B553EE7C /* FileSystemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
+		68917D138041E9F4F94311A97F39A253 /* SKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKAlertController.swift; path = SimpleKit/Classes/SKAlertController.swift; sourceTree = "<group>"; };
+		6E97C605EC7304E45741CAE72ECD450B /* SimpleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKit-dummy.m"; sourceTree = "<group>"; };
 		74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Example-dummy.m"; sourceTree = "<group>"; };
-		7FDA5D52F9A9F024061231039BB32DE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		809E958BA72781183970F59C3E19C6AA /* SimpleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKit.modulemap; sourceTree = "<group>"; };
-		848FD418D352D68AAED8817D0039FEDB /* SKiPhoneSceenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKiPhoneSceenType.swift; path = SimpleKit/Classes/SKiPhoneSceenType.swift; sourceTree = "<group>"; };
+		80F69464A11414CAD7EF0BCFA2C6623B /* SKLocalPushNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKLocalPushNotification.swift; path = SimpleKit/Classes/SKLocalPushNotification.swift; sourceTree = "<group>"; };
+		84BD4F06F0DC3B00AF0DB217C117CE38 /* SKView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKView.swift; path = SimpleKit/Classes/SKView.swift; sourceTree = "<group>"; };
+		87226E70B5FA5C9EB4B9A2890563EBA5 /* SKNavigationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKNavigationProtocol.swift; path = SimpleKit/Classes/SKNavigationProtocol.swift; sourceTree = "<group>"; };
 		918E90FF1AE0C310340C305D6BB9CF54 /* Pods-SimpleKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		96036A91EAD299C9CF3B14347947F314 /* Pods-SimpleKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		99F9979D0EA165CE77EA701770EC0EBB /* SimpleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKit-dummy.m"; sourceTree = "<group>"; };
-		A2C33F9511E0D356E1070C64236D6612 /* SimpleKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SimpleKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ABBD0F06EF424771FD609A738D3ED4C6 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = SimpleKit/Classes/HttpMethod.swift; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA038E7E2A308E2943DC97BE686ED918 /* SKNotificationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKNotificationModel.swift; path = SimpleKit/Classes/SKNotificationModel.swift; sourceTree = "<group>"; };
-		BB49C21A8125826FA1E19FFFFFD7CA2A /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SimpleKit/Classes/Constants.swift; sourceTree = "<group>"; };
-		C0070F33B7F7A9774D461E1DE048211E /* RequestURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
-		C39F6AEAA8A22ED3C0CF82590E3D3BFF /* SimpleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-umbrella.h"; sourceTree = "<group>"; };
+		A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKTextToSpeech.swift; path = SimpleKit/Classes/SKTextToSpeech.swift; sourceTree = "<group>"; };
+		AC5487317CAF3B668B1995DE45741BEA /* SKActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKActivityIndicatorProtocol.swift; path = SimpleKit/Classes/SKActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
+		AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientService.swift; path = SimpleKit/Classes/ClientService.swift; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5E01A0764E8A1B97B1C55F70279C96B /* SimpleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKit.modulemap; sourceTree = "<group>"; };
+		BD37787D8A58CBFD4F537FEA2CEDDB55 /* SKiPhoneSceenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKiPhoneSceenType.swift; path = SimpleKit/Classes/SKiPhoneSceenType.swift; sourceTree = "<group>"; };
+		BFD617E38326A7E1C02ED1900E1E6DC6 /* SKPopUpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKPopUpViewController.swift; path = SimpleKit/Classes/SKPopUpViewController.swift; sourceTree = "<group>"; };
 		C5183FF7922767FFC0871F5D09878A25 /* Pods-SimpleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLDownloadProtocol.swift; path = SimpleKit/Classes/URLDownloadProtocol.swift; sourceTree = "<group>"; };
-		C659C287DC99048FCA9D943F2A5E34C7 /* SKImageClassifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKImageClassifier.swift; path = SimpleKit/Classes/SKImageClassifier.swift; sourceTree = "<group>"; };
-		C6923B852D0A26F2AF927B8D45A9BE5E /* Pods_SimpleKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKView.swift; path = SimpleKit/Classes/SKView.swift; sourceTree = "<group>"; };
-		D11A79785040F596BDEDD58530393300 /* SKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKAlertController.swift; path = SimpleKit/Classes/SKAlertController.swift; sourceTree = "<group>"; };
-		D18D736A4F4FC5D53DF8EAF72596D2CE /* SKScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKScanner.swift; path = SimpleKit/Classes/SKScanner.swift; sourceTree = "<group>"; };
+		C6923B852D0A26F2AF927B8D45A9BE5E /* Pods_SimpleKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleKit_Example.framework; path = "Pods-SimpleKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33187C21983B37D6670AA55A6EF3728 /* SKScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKScanner.swift; path = SimpleKit/Classes/SKScanner.swift; sourceTree = "<group>"; };
+		D68CEE331947117DC6C25CFD74052EA7 /* HttpHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpHeaders.swift; path = SimpleKit/Classes/HttpHeaders.swift; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DD3DE85CCFA56621D0FAA1CFA82A0918 /* ClientService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientService.swift; path = SimpleKit/Classes/ClientService.swift; sourceTree = "<group>"; };
 		E0277B319201B30656ADD9F8B9552C8A /* Pods-SimpleKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F74D96870041A6B11FE0DD17FACD5DB3 /* SimpleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-prefix.pch"; sourceTree = "<group>"; };
 		F8A9A2E11B6F3581D07E8E99F7B7D649 /* Pods-SimpleKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Example-Info.plist"; sourceTree = "<group>"; };
 		F9B67CB40446C107F15453F11501EB17 /* Pods-SimpleKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKReachabilityProtocol.swift; path = SimpleKit/Classes/SKReachabilityProtocol.swift; sourceTree = "<group>"; };
+		FE8047056F77281146EEFEE4B01678AA /* UIViewExtenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtenstion.swift; path = SimpleKit/Classes/UIViewExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,78 +159,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6F4D62C523633050B96C34A564EA27DA /* Resources */ = {
+		45B1476533EC3E9FD4D2BD694E75B4E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CB7CBF4F51D1AD70ADEE5CA25CCBDA2 /* MobileNet.mlmodel */,
+				B7AEB28A10228CCE0C7AC81AE9EBD5C1 /* SimpleKit */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7751FD0C9FA559339D14E265629AAB2B /* SimpleKit */ = {
-			isa = PBXGroup;
-			children = (
-				DD3DE85CCFA56621D0FAA1CFA82A0918 /* ClientService.swift */,
-				BB49C21A8125826FA1E19FFFFFD7CA2A /* Constants.swift */,
-				2C334021139159C9FDFE1E21AE228D8A /* EndPointType.swift */,
-				6F6375AC5001F9B5BFDA5AD4B553EE7C /* FileSystemProtocol.swift */,
-				160008D814DB265AE751E88A12EA5BB6 /* HttpHeaders.swift */,
-				ABBD0F06EF424771FD609A738D3ED4C6 /* HttpMethod.swift */,
-				4DBF0E327C0BAA5AFABBC38DA2A35882 /* Reachability.swift */,
-				C0070F33B7F7A9774D461E1DE048211E /* RequestURL.swift */,
-				1817E24B210AB1815D75B46F25448346 /* SKActivityIndicatorProtocol.swift */,
-				D11A79785040F596BDEDD58530393300 /* SKAlertController.swift */,
-				4498C53905898E85F4C05055FBE88F7F /* SKError.swift */,
-				C659C287DC99048FCA9D943F2A5E34C7 /* SKImageClassifier.swift */,
-				848FD418D352D68AAED8817D0039FEDB /* SKiPhoneSceenType.swift */,
-				5A86BCC66112ECD038448D363A80F357 /* SKLocalPushNotification.swift */,
-				4396B02C959808D03ED36D504B6A5954 /* SKNavigationProtocol.swift */,
-				BA038E7E2A308E2943DC97BE686ED918 /* SKNotificationModel.swift */,
-				146D08662B8B6B528F65C78C665F4EC1 /* SKPopUpViewController.swift */,
-				FE144DEC1E0A0A0C415FD5D155CF977C /* SKReachabilityProtocol.swift */,
-				D18D736A4F4FC5D53DF8EAF72596D2CE /* SKScanner.swift */,
-				62DFC5BBC36A1B9BB361CAEBC3F07F51 /* SKTextToSpeech.swift */,
-				CB3954B87E9E5663CF31DF28D73B120C /* SKView.swift */,
-				2A99DE83C76DE340EA7279D9C18109FE /* UIViewExtenstion.swift */,
-				C59D73BB21EA7D0800DBC381 /* URLDownloadProtocol.swift */,
-				780791642E8FFC1BFED2837C285FDBBE /* Pod */,
-				6F4D62C523633050B96C34A564EA27DA /* Resources */,
-				7D3FA192FC2088461E31E77A55A8B641 /* Support Files */,
-			);
-			name = SimpleKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		780791642E8FFC1BFED2837C285FDBBE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3A5348DC51B6F500D9FB368C61BCB950 /* LICENSE */,
-				7FDA5D52F9A9F024061231039BB32DE9 /* README.md */,
-				A2C33F9511E0D356E1070C64236D6612 /* SimpleKit.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		7D3FA192FC2088461E31E77A55A8B641 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				809E958BA72781183970F59C3E19C6AA /* SimpleKit.modulemap */,
-				6032BE2E7926EFA226997133DB1584EB /* SimpleKit.xcconfig */,
-				99F9979D0EA165CE77EA701770EC0EBB /* SimpleKit-dummy.m */,
-				068A3FBE3FCD77B268CB5EA880322EAC /* SimpleKit-Info.plist */,
-				4CF2526F986DE7B1F195C21A6EC0D350 /* SimpleKit-prefix.pch */,
-				C39F6AEAA8A22ED3C0CF82590E3D3BFF /* SimpleKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SimpleKit";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
-				9981F2606618907D7C7D78E802D1167A /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				45B1476533EC3E9FD4D2BD694E75B4E1 /* Pods */,
 				873ECFBC66406F2BA28429E16DC6EF21 /* Products */,
 				14AB7B1DFBA009C244C4FFFFE2641E38 /* Targets Support Files */,
 			);
@@ -249,12 +188,45 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9981F2606618907D7C7D78E802D1167A /* Development Pods */ = {
+		8F8B69DF1995B1315B4A4C6C36B85FFF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7751FD0C9FA559339D14E265629AAB2B /* SimpleKit */,
+				222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */,
 			);
-			name = "Development Pods";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7AEB28A10228CCE0C7AC81AE9EBD5C1 /* SimpleKit */ = {
+			isa = PBXGroup;
+			children = (
+				AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */,
+				3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */,
+				3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */,
+				20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */,
+				D68CEE331947117DC6C25CFD74052EA7 /* HttpHeaders.swift */,
+				09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */,
+				50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */,
+				2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */,
+				AC5487317CAF3B668B1995DE45741BEA /* SKActivityIndicatorProtocol.swift */,
+				68917D138041E9F4F94311A97F39A253 /* SKAlertController.swift */,
+				04D9E0343FABFB2CD78A9A7C56CA0C97 /* SKError.swift */,
+				5493E7D5419D2B48BEE38DC7465A8469 /* SKImageClassifier.swift */,
+				BD37787D8A58CBFD4F537FEA2CEDDB55 /* SKiPhoneSceenType.swift */,
+				80F69464A11414CAD7EF0BCFA2C6623B /* SKLocalPushNotification.swift */,
+				87226E70B5FA5C9EB4B9A2890563EBA5 /* SKNavigationProtocol.swift */,
+				0624BF3A24309E84B57ABEADEFC04C88 /* SKNotificationModel.swift */,
+				BFD617E38326A7E1C02ED1900E1E6DC6 /* SKPopUpViewController.swift */,
+				01302067F8CB14B52A1E48F4C9D6247B /* SKReachabilityProtocol.swift */,
+				D33187C21983B37D6670AA55A6EF3728 /* SKScanner.swift */,
+				A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */,
+				84BD4F06F0DC3B00AF0DB217C117CE38 /* SKView.swift */,
+				FE8047056F77281146EEFEE4B01678AA /* UIViewExtenstion.swift */,
+				0483F9C0482BB19524668CC8173C5D14 /* URLDownloadProtocol.swift */,
+				8F8B69DF1995B1315B4A4C6C36B85FFF /* Resources */,
+				E9301BBBED1794E4B5A19A7DD7EEA5C2 /* Support Files */,
+			);
+			name = SimpleKit;
+			path = SimpleKit;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -296,6 +268,20 @@
 			);
 			name = "Pods-SimpleKit_Tests";
 			path = "Target Support Files/Pods-SimpleKit_Tests";
+			sourceTree = "<group>";
+		};
+		E9301BBBED1794E4B5A19A7DD7EEA5C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5E01A0764E8A1B97B1C55F70279C96B /* SimpleKit.modulemap */,
+				1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */,
+				6E97C605EC7304E45741CAE72ECD450B /* SimpleKit-dummy.m */,
+				3C648E17624D5D3A4A8B5E05924832B2 /* SimpleKit-Info.plist */,
+				F74D96870041A6B11FE0DD17FACD5DB3 /* SimpleKit-prefix.pch */,
+				6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +338,7 @@
 			buildConfigurationList = E7E63C6B15E8C2DBB6CF3BB9314E07F6 /* Build configuration list for PBXNativeTarget "SimpleKit" */;
 			buildPhases = (
 				C7EB70FE8C0D2176FF6AD01019D7982C /* Headers */,
-				E23E9E0D2E6FD1DFEEDBD453224D4730 /* Sources */,
+				A32368345E8AD2F9F740BED90170E9CC /* Sources */,
 				61FA663B02F89A588FAD977D40264F2F /* Frameworks */,
 				EE87C8FA14EA8DB5517A22AE7340C083 /* Resources */,
 			);
@@ -392,11 +378,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					2BB2493973E96C7D341C21F18745F81B = {
-						LastSwiftMigration = 1010;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -451,42 +432,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A32368345E8AD2F9F740BED90170E9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E072D15CAE52DF95CE108F11C3ED0046 /* ClientService.swift in Sources */,
+				BAAE5941AF4CC666C3A8F013C6EC528D /* Constants.swift in Sources */,
+				14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */,
+				69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */,
+				045D4F5DC02428F820CB6B6DFAA2049D /* HttpHeaders.swift in Sources */,
+				08962FA9669BA1CF77A8964BE2BCD28C /* HttpMethod.swift in Sources */,
+				FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */,
+				520FDC0DF42112C984B828CBD777C41F /* RequestURL.swift in Sources */,
+				7FF382B7B4FCA21AD12119CB6191DA5A /* SimpleKit-dummy.m in Sources */,
+				3BDBF61C1F150032CA6794A22E143511 /* SKActivityIndicatorProtocol.swift in Sources */,
+				234CD28B742FD4A041292339D56639E6 /* SKAlertController.swift in Sources */,
+				00B4A336FBAF8CFD1CE13D45642EA07F /* SKError.swift in Sources */,
+				B44DBCFFBA00C887F5EC7ED6C5BFFCED /* SKImageClassifier.swift in Sources */,
+				670175463FBBCADCC7B66CA418C1AD78 /* SKiPhoneSceenType.swift in Sources */,
+				66361DC1A7F9A7870A81710DEED90C95 /* SKLocalPushNotification.swift in Sources */,
+				02A1DCA2E7E96571BE397345ADE6ACEC /* SKNavigationProtocol.swift in Sources */,
+				4DBB056CEE5BF637F6F03A9EB181273E /* SKNotificationModel.swift in Sources */,
+				CC5B90D4E4AA0CE55D8D13E574DA81AA /* SKPopUpViewController.swift in Sources */,
+				228A2833A752718093169C61774529EF /* SKReachabilityProtocol.swift in Sources */,
+				CBDEFC8A4C4091B6C020B2C2C52B1141 /* SKScanner.swift in Sources */,
+				FC7D880B3C328A97FD1B02FE05A06E9A /* SKTextToSpeech.swift in Sources */,
+				4C067747A2CDC631B3716979F2A30702 /* SKView.swift in Sources */,
+				AE2F1EF8D4A394A002154406C88A14A1 /* UIViewExtenstion.swift in Sources */,
+				5D4921681E38F405291B7829D0564841 /* URLDownloadProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D64167A763C7B5A7CBB5ACAA2F2322AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				037CA0C3BBB449C3413252522B88AD3E /* Pods-SimpleKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E23E9E0D2E6FD1DFEEDBD453224D4730 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				090BCCEC1BB6764EC82DE4B7B988A028 /* ClientService.swift in Sources */,
-				546FAD4DC312ADE9230CB864F9AE3B1D /* Constants.swift in Sources */,
-				984ED0F2ED0D646E525387AED0D1A50A /* EndPointType.swift in Sources */,
-				6877C5A2C6432B98ACE2873985A5687F /* FileSystemProtocol.swift in Sources */,
-				C8667A41009E5269E27210C7852C7771 /* HttpHeaders.swift in Sources */,
-				08451E4E2196165D0AA3432B1EC2C5B9 /* HttpMethod.swift in Sources */,
-				3796B39ACD2B394DC4EDBF66AB1F8390 /* Reachability.swift in Sources */,
-				6446E15F7F5E3AB18560F5374D51BC07 /* RequestURL.swift in Sources */,
-				7108FC3EE61131D77573A771D6DDF41D /* SimpleKit-dummy.m in Sources */,
-				16818538D883E1B5CD969DC16185AEB3 /* SKActivityIndicatorProtocol.swift in Sources */,
-				22017BF8CEF99EAAE1A5DF5E0320594A /* SKAlertController.swift in Sources */,
-				85BCB0B4AE23659F61636916C0CD43FF /* SKError.swift in Sources */,
-				1393648A718E9E23A424828CAD991645 /* SKImageClassifier.swift in Sources */,
-				F1141CD8F732115E46F5B8BE8B18E919 /* SKiPhoneSceenType.swift in Sources */,
-				0819307E4A380EAF52CFCACDD2894670 /* SKLocalPushNotification.swift in Sources */,
-				D70A37BF22B18A1675D14007F90D6F1D /* SKNavigationProtocol.swift in Sources */,
-				1706597EAEE53F858A39251A9DD29AE2 /* SKNotificationModel.swift in Sources */,
-				7A660426BD047B20C391378B655E4FBF /* SKPopUpViewController.swift in Sources */,
-				C59D73BC21EA7D0800DBC381 /* URLDownloadProtocol.swift in Sources */,
-				9A68D76A7B5898F4694CEE81D6F32312 /* SKReachabilityProtocol.swift in Sources */,
-				96977E38D148624F63D553FB1F36F65C /* SKScanner.swift in Sources */,
-				52AB77F187E5010F130ACFB59B060CF2 /* SKTextToSpeech.swift in Sources */,
-				738FFE25FB6931616E159D375CE6A3F3 /* SKView.swift in Sources */,
-				A2B38EB50CEACA4E57FCDEB1579571C5 /* UIViewExtenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +518,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F711431D9E8B2E521E657A8D7338BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKit/SimpleKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKit/SimpleKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKit/SimpleKit.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKit;
+				PRODUCT_NAME = SimpleKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -661,7 +676,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -703,39 +719,6 @@
 			};
 			name = Release;
 		};
-		92BCB66DDA0239B879FA9DA5E90966C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6032BE2E7926EFA226997133DB1584EB /* SimpleKit.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleKit/SimpleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleKit/SimpleKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleKit/SimpleKit.modulemap";
-				PRODUCT_MODULE_NAME = SimpleKit;
-				PRODUCT_NAME = SimpleKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		AC1CCA0F88389D9179F995CC8F7A5F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EBF540BDC1FD2B2435FE6DD5EACB3C0 /* Pods-SimpleKit_Tests.debug.xcconfig */;
@@ -770,40 +753,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B12A4ADB7588B6C5C16737759A6D2A50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6032BE2E7926EFA226997133DB1584EB /* SimpleKit.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SimpleKit/SimpleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimpleKit/SimpleKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimpleKit/SimpleKit.modulemap";
-				PRODUCT_MODULE_NAME = SimpleKit;
-				PRODUCT_NAME = SimpleKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		D05859CD04065A7608C04890A814FAAE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -840,6 +789,39 @@
 			};
 			name = Debug;
 		};
+		F6F5387F7498EF54EE149C4041C18AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKit/SimpleKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKit/SimpleKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKit/SimpleKit.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKit;
+				PRODUCT_NAME = SimpleKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -864,8 +846,8 @@
 		E7E63C6B15E8C2DBB6CF3BB9314E07F6 /* Build configuration list for PBXNativeTarget "SimpleKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92BCB66DDA0239B879FA9DA5E90966C1 /* Debug */,
-				B12A4ADB7588B6C5C16737759A6D2A50 /* Release */,
+				F6F5387F7498EF54EE149C4041C18AAE /* Debug */,
+				1F711431D9E8B2E521E657A8D7338BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

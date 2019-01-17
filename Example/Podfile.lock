@@ -1,16 +1,21 @@
 PODS:
-  - SimpleKit (0.1.0)
+  - SimpleKit (1.0.3)
 
 DEPENDENCIES:
-  - SimpleKit (from `../`)
+  - SimpleKit (from `https://github.com/amrOmran89/SimpleKit-iOS.git`)
 
 EXTERNAL SOURCES:
   SimpleKit:
-    :path: "../"
+    :git: https://github.com/amrOmran89/SimpleKit-iOS.git
+
+CHECKOUT OPTIONS:
+  SimpleKit:
+    :commit: efb31ec34d1a686bd0d03fac75a101318f45d330
+    :git: https://github.com/amrOmran89/SimpleKit-iOS.git
 
 SPEC CHECKSUMS:
-  SimpleKit: 9a80f3fc04d2c132990ce184af2256674d197263
+  SimpleKit: 0ee407f8d9ca039bd6187c82482d854427f1fd43
 
-PODFILE CHECKSUM: ed151f796056546fc30c7174ed9c4d7075b26752
+PODFILE CHECKSUM: 082aef646c0ba8a87f2c0652f858106f8ac04754
 
 COCOAPODS: 1.6.0.beta.2
