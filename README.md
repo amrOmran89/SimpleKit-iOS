@@ -28,7 +28,7 @@ Amr Omran
 
 ### Quick Start
 
-#### To make http request
+#### To make Http GET request
 ```swift
 import UIKit
 import SimpleKit
