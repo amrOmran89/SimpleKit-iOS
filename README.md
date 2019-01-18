@@ -34,8 +34,6 @@ import UIKit
 import SimpleKit
 
 class ViewController: UIViewController {
-
-    let indicator = UIActivityIndicatorView(style: .gray)
     
     override func viewDidLoad() {
         super.viewDidLoad()
