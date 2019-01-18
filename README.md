@@ -96,7 +96,7 @@ class ViewController: UIViewController {
     
 }
 
-struct Response: Codable {
+struct Response: Decodable {
     let page: Int
     let per_page: Int
     let total: Int
@@ -104,7 +104,7 @@ struct Response: Codable {
     let data: [Data]
 }
 
-struct Data: Codable {
+struct Data: Decodable {
     let id: Int
     let first_name: String
     let last_name: String
