@@ -24,6 +24,44 @@ pod 'SimpleKit', :git => 'https://github.com/amrOmran89/SimpleKit-iOS.git'
 
 Amr Omran
 
+## Usage
+
+### Quick Start
+
+#### To make http request
+```swift
+import UIKit
+import SimpleKit
+
+class ViewController: UIViewController {
+
+    let indicator = UIActivityIndicatorView(style: .gray)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+
+    @IBAction func button(_ sender: Any) {
+        
+        ClientService.HTTPRequest(baseURL: "https://reqres.in", path: "/api/users", httpMethod: .get)
+          .build { (result: Data) in
+                print(result.name)
+          }
+    }
+    
+}
+
+struct Data: Decodable {
+    let name: String
+    let job: String
+    let id: String
+    let createdAt: String
+}
+
+```
+
 ## License
 
 SimpleKit is available under the MIT license. See the LICENSE file for more info.
