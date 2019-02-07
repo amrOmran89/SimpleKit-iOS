@@ -1,5 +1,5 @@
 PODS:
-  - SimpleKit (1.0.3)
+  - SimpleKit (1.0.6)
 
 DEPENDENCIES:
   - SimpleKit (from `https://github.com/amrOmran89/SimpleKit-iOS.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SimpleKit:
-    :commit: 8f3ff8f6f979725ae1833d87aa2cf9c654364066
+    :commit: 1879d2c02ff7f956738ddf124e353ddfc25336e7
     :git: https://github.com/amrOmran89/SimpleKit-iOS.git
 
 SPEC CHECKSUMS:
-  SimpleKit: 0ee407f8d9ca039bd6187c82482d854427f1fd43
+  SimpleKit: f34dd60f8ca5bd27cb1c4e04b6dc4af277c4f3e2
 
 PODFILE CHECKSUM: 082aef646c0ba8a87f2c0652f858106f8ac04754
 

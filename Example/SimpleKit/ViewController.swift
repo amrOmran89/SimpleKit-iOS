@@ -9,40 +9,44 @@
 import UIKit
 import SimpleKit
 
-class ViewController: UIViewController, SKActivityIndicatorProtocol {
+class ViewController: UIViewController {
 
     let indicator = UIActivityIndicatorView(style: .gray)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        setLoadingIndicator(activityIndicator: indicator, activate: true)
-        
     }
 
 
     @IBAction func button(_ sender: Any) {
-        print(InternetChecker.isInternetAvailable)
-        setLoadingIndicator(activityIndicator: indicator, activate: false)
+    
         
-        ClientService.HTTPRequest(baseURL: "https://reqres.in",
-                                  path: "/api/users",
-                                  httpMethod: .delete,
-                                  headers: nil,
-                                  parameter: nil)
-            .build { (result: Data) in
-                print(result.createdAt)
-        }
-
+        ClientService.HTTPRequest
+            .init(baseURL: "https://reqres.in")
+            .withPath("/api/users")
+            .withMethod(.get)
+            .withQueries(queries: [URLQueryItem(name: "page", value: "2")])
+            .build { (result: Response) in
+                print(result.data.first?.avatar)
+            }
+        
     }
     
 }
 
-struct Data: Decodable {
-
-    let name: String
-    let job: String
-    let id: String
-    let createdAt: String
+struct Response: Codable {
+    let page: Int
+    let per_page: Int
+    let total: Int
+    let total_pages: Int
+    let data: [Data]
 }
+
+struct Data: Codable {
+    let id: Int
+    let first_name: String
+    let last_name: String
+    let avatar: String
+}
+

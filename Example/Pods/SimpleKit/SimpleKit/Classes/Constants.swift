@@ -8,12 +8,11 @@
 
 import Foundation
 
-
-public enum Constants {
+enum RequestError: Error{
     
-    static let wrongUrl: String = "Wrong URL"
-    static let requestError = "HTTP Request Failed"
-    static let response = "Response: "
-    static let wrongUrlComponents = "ERROR URLCOMPONENTS"
-    static let parameterError =  "Parameter Error"
+    case wrongUrl
+    case requestError
+    case response
+    case wrongUrlComponents
+    case parameterError
 }

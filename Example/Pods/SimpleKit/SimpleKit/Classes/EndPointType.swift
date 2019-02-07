@@ -14,13 +14,15 @@ public typealias Queries = Array<URLQueryItem>
 /// Parameters = Dictionary<String, Any>
 public typealias Parameters = Dictionary<String, Any>
 
+/// Header = Dictionary<String, String>
+public typealias Header = Dictionary<String, String>
 
-public protocol SKEndPointType {
+public protocol EndPointType {
     
     var baseURL: String { get }
-    var path: String { get }
+    var path: String? { get }
     var httpMethod: SKHttpMethod { get }
-    var httpHeaders: Dictionary<String, String>? { get }
+    var httpHeaders: Header? { get }
     var queryItems: Queries? { get }
     var parameter: Parameters? { get }
 }

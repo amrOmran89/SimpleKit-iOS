@@ -7,12 +7,13 @@
 
 import Foundation
 
-public protocol FileSystemProtocol {
+protocol FileSystemProtocol {
     
     func fileLocalUrl(fileName: String) -> URL
 }
 
-public extension FileSystemProtocol {
+
+extension FileSystemProtocol {
     func fileLocalUrl(fileName: String) -> URL {
         let file = FileManager.default
         guard let documents: URL = file.urls(for: .documentDirectory, in: .userDomainMask).first

@@ -8,69 +8,63 @@
 
 import Foundation
 
-public protocol SKRequestURL {
+protocol RequestURL {
     
     /// build GET Request
-    var request: URLRequest { get }
+    func request() throws -> URLRequest
     
-    /// build any request with parameter and headers (Delete, Put, Post, Patch)
-    var requestWithParameterAndHeader: URLRequest { get }
+    /// build any request with parameter and headers such as (Delete, Put, Post, Patch)
+    func requestWithParameterAndHeader() throws -> URLRequest
 }
 
 
 
-public extension SKRequestURL where Self: ClientService.HTTPRequest {
-    
+extension RequestURL where Self: ClientService.HTTPRequest {
     
     /// build GET Request
-    var request: URLRequest {
+    func request() throws -> URLRequest {
         
-        var req: URLRequest!
+        guard let url = URL(string: self.baseURL) else { throw RequestError.wrongUrl }
+        guard var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            else { throw RequestError.wrongUrlComponents }
         
-        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
-        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-
-        components?.path = self.path
-        
-        if let queries = self.queryItems {
-           
-            components?.queryItems = queries
-            let componentsUrl = components?.url
-           
-            print("URL: \(componentsUrl!)")
-            
-            req = URLRequest(url: componentsUrl!)
-            return req
+        if let path = self.path {
+            components.path = path
         }
-        
-        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
-
-        req = URLRequest(url: componentsUrl)
-        return req
+        if let queries = self.queryItems {
+            components.queryItems = queries
+        }
+        guard let urlComponent = components.url else { throw RequestError.requestError }
+        return URLRequest(url: urlComponent)
     }
     
     
-    
-    /// build any request with parameter and headers (Delete, Put, Post, Patch)
-    var requestWithParameterAndHeader: URLRequest {
+    /// build any request with parameter and headers such as (Delete, Put, Post, Patch)
+    func requestWithParameterAndHeader() throws -> URLRequest {
         
-        guard let url = URL(string: self.baseURL) else { fatalError(Constants.wrongUrl + "\(#line) \(#file)") }
-        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        components?.path = self.path
-        guard let componentsUrl = components?.url else { fatalError(Constants.wrongUrlComponents + "\(#line) \(#file)") }
+        guard let url = URL(string: self.baseURL) else { throw RequestError.wrongUrl }
+        guard var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            else { throw RequestError.wrongUrlComponents }
         
-        var req: URLRequest = URLRequest(url: componentsUrl)
-        req.httpMethod = self.httpMethod.rawValue
-        req.allHTTPHeaderFields = self.httpHeaders
+        if let path = self.path {
+            components.path = path
+        }
+       
+        guard let urlComponent = components.url else { throw RequestError.requestError }
+        
+        var request: URLRequest = URLRequest(url: urlComponent)
+        request.httpMethod = self.httpMethod.rawValue
+        request.allHTTPHeaderFields = self.httpHeaders
         
         do {
             if let para = self.parameter {
-                req.httpBody = try JSONSerialization.data(withJSONObject: para, options: [])
+                request.httpBody = try JSONSerialization.data(withJSONObject: para, options: [])
             }
         } catch let error {
             print(error)
         }
-        return req
+        return request
     }
-    
+
+
 }

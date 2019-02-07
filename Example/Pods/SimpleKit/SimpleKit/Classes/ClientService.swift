@@ -9,56 +9,63 @@
 import Foundation
 
 
-public class ClientService: FileSystemProtocol, URLDownloadProtocol {
+public class ClientService: FileSystemProtocol, URLDownloadable {
     
     public init() {}
     
-    public class HTTPRequest: SKEndPointType, SKRequestURL {
+    public class HTTPRequest: EndPointType, RequestURL {
         
         public var baseURL: String
-        public var path: String
-        public var httpHeaders: Dictionary<String, String>?
-        public var httpMethod: SKHttpMethod
+        public var path: String?
+        public var httpHeaders: Header?
+        public var httpMethod: SKHttpMethod = SKHttpMethod.get
         public var queryItems: Queries?
         public var parameter: Parameters?
         
-        public init(baseURL: String,
-                    path: String,
-                    httpMethod: SKHttpMethod,
-                    queryItems: Queries? = nil) {
-            
-            self.baseURL = baseURL
+        public func withPath(_ path: String) -> HTTPRequest {
             self.path = path
-            self.httpMethod = httpMethod
-            self.queryItems = queryItems
+            return self
         }
         
-        /// You can always use MIME class that provides static headers
-        public init(baseURL: String,
-             path: String,
-             httpMethod: SKHttpMethod,
-             headers: Dictionary<String, String>? = nil,
-             parameter: Parameters? = nil) {
-           
-            self.baseURL = baseURL
-            self.path = path
-            self.httpMethod = httpMethod
-            self.httpHeaders = headers
-            self.parameter = parameter
+        public func withMethod(_ method: SKHttpMethod) -> HTTPRequest {
+            self.httpMethod = method
+            return self
         }
         
-
+        public func withQueries(queries: Queries) -> HTTPRequest {
+            self.queryItems = queries
+            return self
+        }
+        
+        public func withHeaders(header: Header) -> HTTPRequest {
+            self.httpHeaders = header
+            return self
+        }
+        
+        public init(baseURL: String) {
+            self.baseURL = baseURL
+        }
+        
         
         public func build<T: Decodable>(callback: @escaping (T) -> Void) {
             
             let session = URLSession.shared
-            var urlRequest: URLRequest!
+            var urlRequest: URLRequest?
+            
             
             switch self.httpMethod {
                 case .get:
-                    urlRequest = self.request
+                    do {
+                        try urlRequest = self.request()
+                    } catch let error {
+                        print(error.localizedDescription)
+                    }
                 default:
-                    urlRequest = self.requestWithParameterAndHeader
+                    do {
+                        try urlRequest = self.requestWithParameterAndHeader()
+                    } catch let error {
+                        print(error.localizedDescription)
+                    }
             }
             
             guard let httpRequest = urlRequest else { return }
@@ -66,11 +73,10 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
             let task = session.dataTask(with: httpRequest) { (data, respone, error) in
                 if let err = error {
                     print(err)
-//                    callback(nil)
                 }
                 else {
                     let responseStatus = respone as! HTTPURLResponse
-                    print("\(Constants.response) \(responseStatus.statusCode)")
+                    print("Response Code: \(responseStatus.statusCode)")
                     
                     do {
                         if let data = data {
@@ -81,7 +87,6 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
                     }
                     catch let error {
                         print(error.localizedDescription)
-//                        callback(nil)
                     }
                 }
             }
@@ -91,6 +96,7 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
     
 
    
+    /// use this method to download files
     public func downloadFile(urlString: String, fileName: String, callback: @escaping (URL?, Error?) -> Void) {
         guard let url = URL(string: urlString) else { return }
 
@@ -108,7 +114,7 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
                 do {
                     try fileManager.copyItem(at: tempURL!, to: fileUrl)
                     if fileManager.fileExists(atPath: fileUrl.path) {
-                        
+            
                         callback(fileUrl, nil)
                     }
                 } catch let error {
@@ -121,9 +127,9 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
     }
     
     
+    /// use this method to load images from API to UIImageView
     public func loadImage(urlString: String, callback: @escaping (UIImage?, Error?) -> Void) {
         let imageCache = NSCache<AnyObject, UIImage>()
-
         guard let url = URL(string: urlString) else { return }
         
         let session = URLSession.shared
@@ -137,21 +143,16 @@ public class ClientService: FileSystemProtocol, URLDownloadProtocol {
                 _ = response as! HTTPURLResponse
                 
                 DispatchQueue.main.async {
-                    
                     guard let data = data else { return }
                     if let downloadedImage: UIImage = UIImage(data: data) {
-                        
                         imageCache.setObject(downloadedImage, forKey: url as AnyObject)
-                        
                         callback(downloadedImage, nil)
-                        
                     }
                 }
             }
         }
         task.resume()
     }
-    
     
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol URLDownloadProtocol {
+public protocol URLDownloadable {
     
     func loadImage(urlString: String, callback: @escaping (UIImage?, Error?) -> Void)
     func downloadFile(urlString: String, fileName: String, callback: @escaping (URL?, Error?) -> Void)

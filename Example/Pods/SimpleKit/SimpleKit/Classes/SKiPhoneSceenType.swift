@@ -7,35 +7,35 @@
 
 import Foundation
 
-public class SKiPhone {
-    
-    public init() {}
+public struct IphoneScreenSize {
     
     /**
      ScreenFamily enum.
      - Returns: iPhone screen families.
      */
-    public var screenFamily: ScreenFamily {
+    public var getScreen: ScreenSize {
+        
         if UIDevice().userInterfaceIdiom == .phone {
+            
             switch UIScreen.main.nativeBounds.height {
                 case 1136:
-                    return ScreenFamily.iPhone_5_5s_SE
+                    return ScreenSize.iPhone_5_5s_SE
                 case 1334:
-                    return ScreenFamily.iPhone_6_7_8
+                    return ScreenSize.iPhone_6_7_8
                 case 2208:
-                    return ScreenFamily.iPhone_6_7_8_plus
+                    return ScreenSize.iPhone_6_7_8_plus
                 case 2436:
-                    return ScreenFamily.iPhoneX
+                    return ScreenSize.iPhoneX
                 default:
-                    return ScreenFamily.unknown
+                    return ScreenSize.unknown
             }
         }
-        return ScreenFamily.unknown
+        return ScreenSize.unknown
     }
     
 }
 
-public enum ScreenFamily {
+public enum ScreenSize {
     case iPhone_5_5s_SE
     case iPhone_6_7_8
     case iPhone_6_7_8_plus
