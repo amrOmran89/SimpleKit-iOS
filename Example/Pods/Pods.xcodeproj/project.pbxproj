@@ -28,7 +28,6 @@
 		7FF382B7B4FCA21AD12119CB6191DA5A /* SimpleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97C605EC7304E45741CAE72ECD450B /* SimpleKit-dummy.m */; };
 		918B22AF525505B05FE16E09B293BCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */; };
 		BAAE5941AF4CC666C3A8F013C6EC528D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */; };
 		E072D15CAE52DF95CE108F11C3ED0046 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */; };
 		FC7D880B3C328A97FD1B02FE05A06E9A /* SKTextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */; };
@@ -63,7 +62,6 @@
 		09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = SimpleKit/Classes/HttpMethod.swift; sourceTree = "<group>"; };
 		1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKit.xcconfig; sourceTree = "<group>"; };
 		20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
-		222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = SimpleKit/Assets/MobileNet.mlmodel; sourceTree = "<group>"; };
 		26F3B6009FF8A925310C675EFE4EF4E4 /* Pods-SimpleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
 		390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 		8F8B69DF1995B1315B4A4C6C36B85FFF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
