@@ -7,22 +7,32 @@
 
 import Foundation
 
-public protocol SKReachabilityProtocol {
+/// To use InternetReachability you need to conform this protocol to AppDelegate
+/// call startReachability(_:) in didFinishLaunchingWithOptions(_:)
+/// create instance from Reachability pass to startReachability(_:) to activate the Notification Listener
+public protocol InternetReachability {
     
+    /**
+     Call this method in didFinishLaunchingWithOptions to start the Notification Center.
+     - Parameter reachability: Reachability class.
+     */
     func startReachabilityCheckNotifier(reachability: Reachability)
+    
+    /**
+     Call this method in applicationDidEnterBackground to stop the Notification Center.
+     - Parameter reachability: Reachability class.
+     */
     func stopReachabilityCheckNotifier(reachability: Reachability)
 }
 
-public extension SKReachabilityProtocol {
+public extension InternetReachability {
     
     /**
      Call this method in didFinishLaunchingWithOptions to start the Notification Center.
      - Parameter reachability: Reachability class.
      */
     func startReachabilityCheckNotifier(reachability: Reachability) {
-        
         reachability.whenReachable = { reachability in
-           
             switch reachability.connection {
                 case .wifi:
                     print("Reachable via WiFi")
