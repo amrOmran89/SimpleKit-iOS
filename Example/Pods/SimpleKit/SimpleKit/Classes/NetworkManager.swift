@@ -9,11 +9,11 @@
 import Foundation
 
 
-public class APIClient: FileSystemProtocol, URLDownloadable {
+public class NetworkManager: FileSystemProtocol, URLDownloadable {
     
     public init() {}
     
-    public class HTTPRequest: EndPointType, RequestURL {
+    public class HTTPClient: EndPointType, RequestURL {
         
         public var baseURL: String
         public var path: String?
@@ -22,22 +22,22 @@ public class APIClient: FileSystemProtocol, URLDownloadable {
         public var queryItems: Queries?
         public var parameter: Parameters?
         
-        public func withPath(_ path: String) -> HTTPRequest {
+        public func withPath(_ path: String) -> HTTPClient {
             self.path = path
             return self
         }
         
-        public func withMethod(_ method: SKHttpMethod) -> HTTPRequest {
+        public func withMethod(_ method: SKHttpMethod) -> HTTPClient {
             self.httpMethod = method
             return self
         }
         
-        public func withQueries(queries: Queries) -> HTTPRequest {
+        public func withQueries(queries: Queries) -> HTTPClient {
             self.queryItems = queries
             return self
         }
         
-        public func withHeaders(header: Header) -> HTTPRequest {
+        public func withHeaders(header: Header) -> HTTPClient {
             self.httpHeaders = header
             return self
         }

@@ -19,7 +19,7 @@ protocol RequestURL {
 
 
 
-extension RequestURL where Self: ClientService.HTTPRequest {
+extension RequestURL where Self: NetworkManager.HTTPClient {
     
     /// build GET Request
     func request() throws -> URLRequest {

@@ -30,7 +30,7 @@
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9946D39A405B10D29440AFCC764385E /* MobileNet.mlmodel in Resources */ = {isa = PBXBuildFile; fileRef = 222870CEBEE1B0F461C9835ED141E8AF /* MobileNet.mlmodel */; };
 		BAAE5941AF4CC666C3A8F013C6EC528D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */; };
-		E072D15CAE52DF95CE108F11C3ED0046 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */; };
+		E072D15CAE52DF95CE108F11C3ED0046 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */; };
 		FC7D880B3C328A97FD1B02FE05A06E9A /* SKTextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */; };
 		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */; };
@@ -87,7 +87,7 @@
 		96036A91EAD299C9CF3B14347947F314 /* Pods-SimpleKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		A783B68200ACC5DE10CE17BA22B2C19F /* SKTextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKTextToSpeech.swift; path = SimpleKit/Classes/SKTextToSpeech.swift; sourceTree = "<group>"; };
 		AC5487317CAF3B668B1995DE45741BEA /* SKActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKActivityIndicatorProtocol.swift; path = SimpleKit/Classes/SKActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
-		AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientService.swift; path = SimpleKit/Classes/ClientService.swift; sourceTree = "<group>"; };
+		AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = SimpleKit/Classes/NetworkManager.swift; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5E01A0764E8A1B97B1C55F70279C96B /* SimpleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKit.modulemap; sourceTree = "<group>"; };
 		BD37787D8A58CBFD4F537FEA2CEDDB55 /* SKiPhoneSceenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKiPhoneSceenType.swift; path = SimpleKit/Classes/SKiPhoneSceenType.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		B7AEB28A10228CCE0C7AC81AE9EBD5C1 /* SimpleKit */ = {
 			isa = PBXGroup;
 			children = (
-				AF1674392B2FE8077620855E679F2F1A /* ClientService.swift */,
+				AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */,
 				3D23A26B4E1D0F53ABD216B1434CDE1F /* Constants.swift */,
 				3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */,
 				20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */,
@@ -417,7 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E072D15CAE52DF95CE108F11C3ED0046 /* ClientService.swift in Sources */,
+				E072D15CAE52DF95CE108F11C3ED0046 /* NetworkManager.swift in Sources */,
 				BAAE5941AF4CC666C3A8F013C6EC528D /* Constants.swift in Sources */,
 				14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */,
 				69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */,
