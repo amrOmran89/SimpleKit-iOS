@@ -149,6 +149,4 @@ public class NetworkManager: FileSystemProtocol, URLDownloadable {
         }
         task.resume()
     }
-    
 }
-
