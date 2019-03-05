@@ -18,7 +18,7 @@ protocol RequestURL {
 }
 
 
-extension RequestURL where Self: NetworkManager.HTTPClient {
+extension RequestURL where Self: NetworkService.HTTPClient {
     
     /// build GET Request
     func request() throws -> URLRequest {

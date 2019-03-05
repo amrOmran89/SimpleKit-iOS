@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class NetworkManager: FileSystemProtocol, URLDownloadable {
+public class NetworkService: FileSystemProtocol, URLDownloadable {
     
     public init() {}
     

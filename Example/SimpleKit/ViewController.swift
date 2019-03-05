@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: Any) {
     
         
-        NetworkManager.HTTPClient
+        NetworkService.HTTPClient
             .init(baseURL: "https://reqres.in")
             .withPath("/api/users")
             .withMethod(.get)

@@ -22,7 +22,7 @@
 		918B22AF525505B05FE16E09B293BCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAAE5941AF4CC666C3A8F013C6EC528D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23A26B4E1D0F53ABD216B1434CDE1F /* Error.swift */; };
-		E072D15CAE52DF95CE108F11C3ED0046 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */; };
+		E072D15CAE52DF95CE108F11C3ED0046 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */; };
 		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,7 @@
 		74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Example-dummy.m"; sourceTree = "<group>"; };
 		918E90FF1AE0C310340C305D6BB9CF54 /* Pods-SimpleKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		96036A91EAD299C9CF3B14347947F314 /* Pods-SimpleKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = SimpleKit/Classes/NetworkManager.swift; sourceTree = "<group>"; };
+		AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = SimpleKit/Classes/NetworkService.swift; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5E01A0764E8A1B97B1C55F70279C96B /* SimpleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKit.modulemap; sourceTree = "<group>"; };
 		C5183FF7922767FFC0871F5D09878A25 /* Pods-SimpleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		B7AEB28A10228CCE0C7AC81AE9EBD5C1 /* SimpleKit */ = {
 			isa = PBXGroup;
 			children = (
-				AF1674392B2FE8077620855E679F2F1A /* NetworkManager.swift */,
+				AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */,
 				3D23A26B4E1D0F53ABD216B1434CDE1F /* Error.swift */,
 				3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */,
 				20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */,
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E072D15CAE52DF95CE108F11C3ED0046 /* NetworkManager.swift in Sources */,
+				E072D15CAE52DF95CE108F11C3ED0046 /* NetworkService.swift in Sources */,
 				BAAE5941AF4CC666C3A8F013C6EC528D /* Error.swift in Sources */,
 				14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */,
 				69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */,
