@@ -15,12 +15,16 @@ public class NetworkManager: FileSystemProtocol, URLDownloadable {
     
     public class HTTPClient: EndPointType, RequestURL {
         
-        public var baseURL: String
-        public var path: String?
-        public var httpHeaders: Header?
-        public var httpMethod: SKHttpMethod = SKHttpMethod.get
-        public var queryItems: Queries?
-        public var parameter: Parameters?
+        var baseURL: String
+        var path: String?
+        var httpHeaders: Header?
+        var httpMethod: SKHttpMethod = SKHttpMethod.get
+        var queryItems: Queries?
+        var parameter: Parameters?
+        
+        public init(baseURL: String) {
+            self.baseURL = baseURL
+        }
         
         public func withPath(_ path: String) -> HTTPClient {
             self.path = path
@@ -42,27 +46,20 @@ public class NetworkManager: FileSystemProtocol, URLDownloadable {
             return self
         }
         
-        public init(baseURL: String) {
-            self.baseURL = baseURL
-        }
-        
-        
         public func build<T: Decodable>(callback: @escaping (T) -> Void) {
-            
             let session = URLSession.shared
             var urlRequest: URLRequest?
-            
             
             switch self.httpMethod {
                 case .get:
                     do {
-                        try urlRequest = self.request()
+                        try urlRequest = self.request() // request() may throws an error because of the url
                     } catch let error {
                         print(error.localizedDescription)
                     }
                 default:
                     do {
-                        try urlRequest = self.requestWithParameterAndHeader()
+                        try urlRequest = self.requestWithParameterAndHeader() // may throws an error because of the url
                     } catch let error {
                         print(error.localizedDescription)
                     }
@@ -84,8 +81,7 @@ public class NetworkManager: FileSystemProtocol, URLDownloadable {
                             
                             callback(jsonData)
                         }
-                    }
-                    catch let error {
+                    } catch let error {
                         print(error.localizedDescription)
                     }
                 }

@@ -18,7 +18,6 @@ protocol RequestURL {
 }
 
 
-
 extension RequestURL where Self: NetworkManager.HTTPClient {
     
     /// build GET Request

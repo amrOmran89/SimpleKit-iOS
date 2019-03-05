@@ -17,7 +17,7 @@ public typealias Parameters = Dictionary<String, Any>
 /// Header = Dictionary<String, String>
 public typealias Header = Dictionary<String, String>
 
-public protocol EndPointType {
+protocol EndPointType {
     
     var baseURL: String { get }
     var path: String? { get }
