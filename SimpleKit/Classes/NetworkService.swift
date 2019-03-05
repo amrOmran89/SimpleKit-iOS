@@ -51,18 +51,18 @@ public class NetworkService: FileSystemProtocol, URLDownloadable {
             var urlRequest: URLRequest?
             
             switch self.httpMethod {
-                case .get:
-                    do {
-                        try urlRequest = self.request() // request() may throws an error because of the url
-                    } catch let error {
-                        print(error.localizedDescription)
-                    }
-                default:
-                    do {
-                        try urlRequest = self.requestWithParameterAndHeader() // may throws an error because of the url
-                    } catch let error {
-                        print(error.localizedDescription)
-                    }
+            case .get:
+                do {
+                    try urlRequest = self.request() // request() may throws an error because of the url
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            default:
+                do {
+                    try urlRequest = self.requestWithParameterAndHeader() // may throws an error because of the url
+                } catch let error {
+                    print(error.localizedDescription)
+                }
             }
             
             guard let httpRequest = urlRequest else { return }
@@ -90,12 +90,12 @@ public class NetworkService: FileSystemProtocol, URLDownloadable {
         }
     }
     
-
-   
+    
+    
     /// use this method to download files
     public func downloadFile(urlString: String, fileName: String, callback: @escaping (URL?, Error?) -> Void) {
         guard let url = URL(string: urlString) else { return }
-
+        
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let task = session.downloadTask(with: url) { (tempURL, response, error) in
@@ -110,7 +110,7 @@ public class NetworkService: FileSystemProtocol, URLDownloadable {
                 do {
                     try fileManager.copyItem(at: tempURL!, to: fileUrl)
                     if fileManager.fileExists(atPath: fileUrl.path) {
-            
+                        
                         callback(fileUrl, nil)
                     }
                 } catch let error {

@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		037CA0C3BBB449C3413252522B88AD3E /* Pods-SimpleKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0277B319201B30656ADD9F8B9552C8A /* Pods-SimpleKit_Tests-dummy.m */; };
-		08962FA9669BA1CF77A8964BE2BCD28C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */; };
-		14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */; };
-		228A2833A752718093169C61774529EF /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302067F8CB14B52A1E48F4C9D6247B /* InternetReachability.swift */; };
 		37782EF66F9697AF00E60923BF941E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		520FDC0DF42112C984B828CBD777C41F /* RequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */; };
-		5D4921681E38F405291B7829D0564841 /* URLDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483F9C0482BB19524668CC8173C5D14 /* URLDownloadable.swift */; };
 		6354E1A90368F11C108F5208E954A077 /* Pods-SimpleKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */; };
-		69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */; };
 		74E593155D6C099C40AD990EF24A1EB3 /* Pods-SimpleKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D5C73262AA70F1ED1E3A11327098FA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		7FF382B7B4FCA21AD12119CB6191DA5A /* SimpleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97C605EC7304E45741CAE72ECD450B /* SimpleKit-dummy.m */; };
 		918B22AF525505B05FE16E09B293BCF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		9AC08551B6D0937A14DFBD3FF105CAC4 /* Pods-SimpleKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05356FDC3EE202795C8F198B8D41D33 /* Pods-SimpleKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAAE5941AF4CC666C3A8F013C6EC528D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23A26B4E1D0F53ABD216B1434CDE1F /* Error.swift */; };
-		E072D15CAE52DF95CE108F11C3ED0046 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */; };
+		C5D5456C222EEDC90082273C /* FileSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54563222EEDC80082273C /* FileSystemProtocol.swift */; };
+		C5D5456D222EEDC90082273C /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54564222EEDC80082273C /* InternetReachability.swift */; };
+		C5D5456E222EEDC90082273C /* RequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54565222EEDC90082273C /* RequestURL.swift */; };
+		C5D5456F222EEDC90082273C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54566222EEDC90082273C /* EndPointType.swift */; };
+		C5D54570222EEDC90082273C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54567222EEDC90082273C /* Error.swift */; };
+		C5D54571222EEDC90082273C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54568222EEDC90082273C /* Reachability.swift */; };
+		C5D54572222EEDC90082273C /* URLDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D54569222EEDC90082273C /* URLDownloadable.swift */; };
+		C5D54573222EEDC90082273C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5456A222EEDC90082273C /* NetworkService.swift */; };
+		C5D54574222EEDC90082273C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5456B222EEDC90082273C /* HttpMethod.swift */; };
 		FCFB223250E885BBD37CE3505D8150E8 /* SimpleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,25 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01302067F8CB14B52A1E48F4C9D6247B /* InternetReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternetReachability.swift; path = SimpleKit/Classes/InternetReachability.swift; sourceTree = "<group>"; };
 		022F3A34EF9563F0DC22583B49C0503D /* SimpleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031AA4CF46B6E638CD0A802254A29AB6 /* Pods-SimpleKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0483F9C0482BB19524668CC8173C5D14 /* URLDownloadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDownloadable.swift; path = SimpleKit/Classes/URLDownloadable.swift; sourceTree = "<group>"; };
 		04DF6A6196ADED6FF6FC30D991938605 /* Pods-SimpleKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleKit_Example.modulemap"; sourceTree = "<group>"; };
-		09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = SimpleKit/Classes/HttpMethod.swift; sourceTree = "<group>"; };
 		1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKit.xcconfig; sourceTree = "<group>"; };
-		20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
 		26F3B6009FF8A925310C675EFE4EF4E4 /* Pods-SimpleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
 		390EE769C1361D39800414F313933463 /* Pods-SimpleKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = SimpleKit/Classes/EndPointType.swift; sourceTree = "<group>"; };
 		3C648E17624D5D3A4A8B5E05924832B2 /* SimpleKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKit-Info.plist"; sourceTree = "<group>"; };
-		3D23A26B4E1D0F53ABD216B1434CDE1F /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SimpleKit/Classes/Error.swift; sourceTree = "<group>"; };
 		45C3F695E46394B403A72AEB64501B08 /* Pods-SimpleKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D50E8EA77BA43863679FC6AB78B9AB9 /* Pods-SimpleKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4EBF540BDC1FD2B2435FE6DD5EACB3C0 /* Pods-SimpleKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF195FFF90CAF7A329E71068B78960A /* Pods-SimpleKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleKit_Tests.modulemap"; sourceTree = "<group>"; };
-		50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = SimpleKit/Classes/Reachability.swift; sourceTree = "<group>"; };
 		54699D6302F37C2A7F01836A54D151F3 /* Pods_SimpleKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6048C2F1728F5565FE6B9E045AF5FA3C /* SimpleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKit-umbrella.h"; sourceTree = "<group>"; };
 		625533FA4A3A4E6C7B5302C6E0186929 /* Pods-SimpleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,10 +63,18 @@
 		74B4462606940CA019760BC8700F3C1E /* Pods-SimpleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Example-dummy.m"; sourceTree = "<group>"; };
 		918E90FF1AE0C310340C305D6BB9CF54 /* Pods-SimpleKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		96036A91EAD299C9CF3B14347947F314 /* Pods-SimpleKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = SimpleKit/Classes/NetworkService.swift; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5E01A0764E8A1B97B1C55F70279C96B /* SimpleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKit.modulemap; sourceTree = "<group>"; };
 		C5183FF7922767FFC0871F5D09878A25 /* Pods-SimpleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C5D54563222EEDC80082273C /* FileSystemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileSystemProtocol.swift; path = ../../../SimpleKit/Classes/FileSystemProtocol.swift; sourceTree = "<group>"; };
+		C5D54564222EEDC80082273C /* InternetReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternetReachability.swift; path = ../../../SimpleKit/Classes/InternetReachability.swift; sourceTree = "<group>"; };
+		C5D54565222EEDC90082273C /* RequestURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestURL.swift; path = ../../../SimpleKit/Classes/RequestURL.swift; sourceTree = "<group>"; };
+		C5D54566222EEDC90082273C /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = ../../../SimpleKit/Classes/EndPointType.swift; sourceTree = "<group>"; };
+		C5D54567222EEDC90082273C /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = ../../../SimpleKit/Classes/Error.swift; sourceTree = "<group>"; };
+		C5D54568222EEDC90082273C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ../../../SimpleKit/Classes/Reachability.swift; sourceTree = "<group>"; };
+		C5D54569222EEDC90082273C /* URLDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLDownloadable.swift; path = ../../../SimpleKit/Classes/URLDownloadable.swift; sourceTree = "<group>"; };
+		C5D5456A222EEDC90082273C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = ../../../SimpleKit/Classes/NetworkService.swift; sourceTree = "<group>"; };
+		C5D5456B222EEDC90082273C /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = ../../../SimpleKit/Classes/HttpMethod.swift; sourceTree = "<group>"; };
 		C6923B852D0A26F2AF927B8D45A9BE5E /* Pods_SimpleKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E0277B319201B30656ADD9F8B9552C8A /* Pods-SimpleKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleKit_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -168,15 +168,15 @@
 		B7AEB28A10228CCE0C7AC81AE9EBD5C1 /* SimpleKit */ = {
 			isa = PBXGroup;
 			children = (
-				AF1674392B2FE8077620855E679F2F1A /* NetworkService.swift */,
-				3D23A26B4E1D0F53ABD216B1434CDE1F /* Error.swift */,
-				3BA60F86ED65E3DBD7DDD7CDDE0B3010 /* EndPointType.swift */,
-				20AE7F69D306D0696C596E2110EE778B /* FileSystemProtocol.swift */,
-				09E054842C6D8B3FB44C08E622721B37 /* HttpMethod.swift */,
-				50BF8DAC8DC904FDEDC33688B0850AC2 /* Reachability.swift */,
-				01302067F8CB14B52A1E48F4C9D6247B /* InternetReachability.swift */,
-				2CEF24DE14B78B2E938A546674C2ADD6 /* RequestURL.swift */,
-				0483F9C0482BB19524668CC8173C5D14 /* URLDownloadable.swift */,
+				C5D5456A222EEDC90082273C /* NetworkService.swift */,
+				C5D54566222EEDC90082273C /* EndPointType.swift */,
+				C5D54567222EEDC90082273C /* Error.swift */,
+				C5D54563222EEDC80082273C /* FileSystemProtocol.swift */,
+				C5D5456B222EEDC90082273C /* HttpMethod.swift */,
+				C5D54564222EEDC80082273C /* InternetReachability.swift */,
+				C5D54568222EEDC90082273C /* Reachability.swift */,
+				C5D54565222EEDC90082273C /* RequestURL.swift */,
+				C5D54569222EEDC90082273C /* URLDownloadable.swift */,
 				8F8B69DF1995B1315B4A4C6C36B85FFF /* Resources */,
 				E9301BBBED1794E4B5A19A7DD7EEA5C2 /* Support Files */,
 			);
@@ -332,6 +332,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					2BB2493973E96C7D341C21F18745F81B = {
+						LastSwiftMigration = 1010;
+					};
+					B94D0578E243333547494384A9BCC49F = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -389,16 +397,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E072D15CAE52DF95CE108F11C3ED0046 /* NetworkService.swift in Sources */,
-				BAAE5941AF4CC666C3A8F013C6EC528D /* Error.swift in Sources */,
-				14F1ACC20BABE9E15D8866B6CA9150CC /* EndPointType.swift in Sources */,
-				69FD62ADF24491A80D2831FBD1D03DE5 /* FileSystemProtocol.swift in Sources */,
-				08962FA9669BA1CF77A8964BE2BCD28C /* HttpMethod.swift in Sources */,
-				FD74D46378AD1320FDDACBCBB30DE274 /* Reachability.swift in Sources */,
-				520FDC0DF42112C984B828CBD777C41F /* RequestURL.swift in Sources */,
+				C5D54571222EEDC90082273C /* Reachability.swift in Sources */,
+				C5D5456C222EEDC90082273C /* FileSystemProtocol.swift in Sources */,
+				C5D54574222EEDC90082273C /* HttpMethod.swift in Sources */,
 				7FF382B7B4FCA21AD12119CB6191DA5A /* SimpleKit-dummy.m in Sources */,
-				228A2833A752718093169C61774529EF /* InternetReachability.swift in Sources */,
-				5D4921681E38F405291B7829D0564841 /* URLDownloadable.swift in Sources */,
+				C5D5456D222EEDC90082273C /* InternetReachability.swift in Sources */,
+				C5D54573222EEDC90082273C /* NetworkService.swift in Sources */,
+				C5D5456F222EEDC90082273C /* EndPointType.swift in Sources */,
+				C5D54570222EEDC90082273C /* Error.swift in Sources */,
+				C5D5456E222EEDC90082273C /* RequestURL.swift in Sources */,
+				C5D54572222EEDC90082273C /* URLDownloadable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +477,7 @@
 			baseConfigurationReference = 1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -627,6 +636,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -650,6 +660,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -698,6 +709,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -721,6 +733,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -732,6 +746,7 @@
 			baseConfigurationReference = 1A62F4D47EA7F20432199ED96496196D /* SimpleKit.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -753,6 +768,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
